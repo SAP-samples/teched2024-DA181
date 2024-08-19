@@ -1,8 +1,8 @@
-# Session ID - Session Title
+# DA181 - Build AI-enabled intelligent data apps
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2024 session called DA181 - Build AI-enabled intelligent data apps.  
 
 ## Overview
 
