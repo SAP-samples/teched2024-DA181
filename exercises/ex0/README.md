@@ -1,26 +1,18 @@
-# Level 1 Heading
+# Add SAP HANA Database Extensions in Your Dev Space
 
-In this exercise, you will...
+1. Go to Product Switch Icon in your SAP Build Lobby and Click on Dev Space Manager
 
-## Level 2 Heading
+<br>![](/exercises/ex0/images/devspace.png)
 
-After completing these steps you will have....
+2. If your dev space is running click on stop and then click on the edit option as shown below.
 
-1.	Click here.
-<br>![](/exercises/ex0/images/00_00_0010.png)
+<br>![](/exercises/ex0/images/addplugin.png)
 
-2.	Insert this code.
-``` abap
- DATA(params) = request->get_form_fields(  ).
- READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
+3. Add the SAP HANA Database explorer Extensions and save as shown below
+
+<br>![](/exercises/ex0/images/selectplugin.png)
 
 ## Summary
 
 Now that you have ... 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Continue to - [Exercise 1 - Create a Full-Stack Project in SAP Build Code](../ex1/README.md)
