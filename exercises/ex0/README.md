@@ -14,5 +14,5 @@
 
 ## Summary
 
-Now that you have ... 
+Now that you have your dev space configured, go to the next step to create the project.
 Continue to - [Exercise 1 - Create a Full-Stack Project in SAP Build Code](../ex1/README.md)
