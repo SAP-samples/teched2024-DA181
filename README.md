@@ -6,11 +6,13 @@ This repository contains the material for the SAP TechEd 2024 session called DA1
 
 ## Overview
 
-This session introduces attendees to...
+Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This repository contains a series of exercises and sub-exercises designed to help you learn and practice building intelligent data applications using Artificial Intelligence (AI). Each exercise includes a step by step instructions from setup to develop an application using SAP Build Code & Joule.
 
-## Requirements
+## Prerequisites
 
-The requirements to follow the exercises in this repository are...
+1. You have an SAP BTP Trial account [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
+2. You have completed the [Setup SAP Build Code](https://developers.sap.com/tutorials/build-code-setup.html) tutorial.
+
 
 ## Exercises
 
