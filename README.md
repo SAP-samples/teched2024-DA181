@@ -19,18 +19,14 @@ Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This reposit
 - [Getting Started - Add SAP HANA Database Extensions in your Dev Space](exercises/ex0/)
 - [Exercise 1 - Create a Full-Stack Project in SAP Build Code](https://developers.sap.com/tutorials/build-code-getting-started..html)
 - [Exercise 2 - Create Data Model & Service with Joule](exercises/ex1/)
-    - [Exercise 2.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 3 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 3.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 3.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 3 - Add Business Partner Data ](../ex3/README.md)
+    - [Exercise - Optional - Add the Consumption of an External Service to Your CAP Application](https://developers.sap.com/tutorials/btp-app-ext-service-add-consumption.html#57122299-7acc-4afc-9c4a-87b95c9c2fd9)
+    -  [Exercise 3.1 - Edit your Data model & Service ](../ex3/README.md)
 
-  
-**OR** Link to the Tutorial Navigator for example...
-
--- new change 
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
+- [Exercise 4 - Add Application Logic](exercises/ex2/)
+- [Exercise 5 - Add UI to your application ](exercises/ex2/)
+- [Exercise 6 - Bind your application to an HDI Container ](exercises/ex2/)
+- [Exercise 7 - Run your application & view the data in SAP HANA Database Explorer ](exercises/ex2/)
 
 **IMPORTANT**
 
