@@ -1,8 +1,10 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 2 - Create Data Model & Service with Joule
 
-In this exercise, we will create...
+In this exercise, we will create a risk management application, helps organizations identify, assess, and track risks, while implementing mitigation strategies to minimize their impact.
 
-## Exercise 1.1 Sub Exercise 1 Description
+## Exercise 2.1 Generate data model
+
+1. 
 
 After completing these steps you will have created...
 
