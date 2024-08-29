@@ -1,46 +1,60 @@
-# Exercise 2 - Create Data Model & Service with Joule
+# Exercise 4 - Add Application Logic
 
-In this exercise, we will create a risk management application, helps organizations identify, assess, and track risks, while implementing mitigation strategies to minimize their impact.
+In this exercise, lets create a logic for the service with the help of Joule. We have our risks and mitigation as our entities, lets create a logic where if the impact of risk is greather than 10000, set the criticality of that risk to high or set it to warning.
 
-## Exercise 2.1 Generate data model
+1. Go to your storyboard, under the services, open the graphical modeller, choose the risk entity and select add logic.
 
-1. 
+<br>![](/exercises/ex4/images/addlogic.png)
 
-After completing these steps you will have created...
+2. Once the dialog box appears, select the defaults.
 
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
+<br>![](/exercises/ex4/images/dialoglogic.png)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
+3. Select the handlers as shown below
+
+<br>![](/exercises/ex4/images/risklogicedit.png)
+
+4. Open code editor, select application logic
+
+<br>![](/exercises/ex4/images/applicationlogicopen.png)
+
+5. Copy the below text
 ```
-
-
-
-## Exercise 1.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-
+if the impact of the current risk is greater than 10000 dollars set the criticality to 1 otherwise to 2
 ```
+6. You can now accept the suggested code and the new changes will be reflected in your project.
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+<br>![](/exercises/ex4/images/joulesuggestion.png)
 
+7. code is as follows :
+```javascript
+/**
+ * 
+ * @After(event = { "READ" }, entity = "techedda181demoSrv.Risks")
+ * @param {(Object|Object[])} results - For the After phase only: the results of the event processing
+ * @param {Object} request - User information, tenant-specific CDS model, headers and query parameters
+*/
+module.exports = async function(results, request) {
+    if (!results) return;
+
+    const { Risks } = cds.entities;
+
+    // Ensure results is an array
+    if (!Array.isArray(results)) {
+        results = [results];
+    }
+
+    for (const risk of results) {
+        if (risk.impact !== undefined) {
+            risk.criticality = risk.impact > 10000 ? 1 : 2;
+        }
+    }
+};
+```
 
 ## Summary
 
-You've now ...
+You've now added a service logic to your risk management application.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 5 - Add UI to your application ](../ex5/README.md)
 
