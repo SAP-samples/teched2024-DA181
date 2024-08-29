@@ -19,7 +19,7 @@ Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This reposit
 - [Getting Started - Add SAP HANA Database Extensions in your Dev Space](exercises/ex0/)
 - [Exercise 1 - Create a Full-Stack Project in SAP Build Code](https://developers.sap.com/tutorials/build-code-getting-started..html)
 - [Exercise 2 - Create Data Model & Service with Joule](exercises/ex1/)
-- [Exercise 3 - Add Business Partner Data ](../ex3/README.md)
+- [Exercise 3 - Add Business Partner Data ](exercises/ex3/README.md)
     - [Exercise - Optional - Add the Consumption of an External Service to Your CAP Application](https://developers.sap.com/tutorials/btp-app-ext-service-add-consumption.html#57122299-7acc-4afc-9c4a-87b95c9c2fd9)
 
 - [Exercise 4 - Add Application Logic](exercises/ex2/)
