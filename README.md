@@ -22,10 +22,10 @@ Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This reposit
 - [Exercise 3 - Add Business Partner Data ](exercises/ex3/README.md)
     - [Exercise - Optional - Add the Consumption of an External Service to Your CAP Application](https://developers.sap.com/tutorials/btp-app-ext-service-add-consumption.html#57122299-7acc-4afc-9c4a-87b95c9c2fd9)
 
-- [Exercise 4 - Add Application Logic](exercises/ex2/)
-- [Exercise 5 - Add UI to your application ](exercises/ex2/)
-- [Exercise 6 - Bind your application to an HDI Container ](exercises/ex2/)
-- [Exercise 7 - Run your application & view the data in SAP HANA Database Explorer ](exercises/ex2/)
+- [Exercise 4 - Add Application Logic](exercises/ex4/)
+- [Exercise 5 - Add UI to your application ](exercises/ex5/)
+- [Exercise 6 - Bind your application to an HDI Container ](exercises/ex6/)
+- [Exercise 7 - Run your application & view the data in SAP HANA Database Explorer ](exercises/ex7/)
 
 **IMPORTANT**
 
