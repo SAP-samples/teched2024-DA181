@@ -28,5 +28,5 @@ In this exercise, lets add a simple fiori UI to your risk management application
 
 You've now created the List report UI to your application.
 
-Continue to - [Exercise 5.1 - Modify the UI](../ex5.1/README.md)
+Continue to - [Exercise 5.1 - Modify the UI ](exercises/ex5/ex5.1/)
 
