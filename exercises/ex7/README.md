@@ -39,7 +39,7 @@ In this exercise, we will configure the run configuration and set the database a
 
 ## Summary
 
-You've now successfully have a full stack application with SAP HANA Cloud as database and Cloud Application Programming Model ( CAP ) with Fiori representation.
+You now have successfully built a full stack application with SAP HANA Cloud as database and Cloud Application Programming Model ( CAP ) with Fiori representation.
 
 
 
