@@ -1,46 +1,45 @@
-# Exercise 4 - Create Data Model & Service with Joule
+# Exercise 7 - Run your application & view the data in SAP HANA Database Explorer
 
-In this exercise, we will create a risk management application, helps organizations identify, assess, and track risks, while implementing mitigation strategies to minimize their impact.
-
-## Exercise 2.1 Generate data model
-
-1. 
-
-After completing these steps you will have created...
-
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
+In this exercise, we will configure the run configuration and set the database as SAP HANA Cloud, run the application and also see the SAP HANA Database explorer. 
 
 
+## Exercise 7.1  Create a run configuration
 
-## Exercise 1.2 Sub Exercise 2 Description
+1. Go to run configuration and click on the project launch.json and select SAP HANA Cloud as database. Then select the HDI container which was created in the [Exercise 6 - Bind your application to an HDI Container ](exercises/ex6/)
 
-After completing these steps you will have...
+<br>![](/exercises/ex7/images/runconfig.png)
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
+2. Select the OData option, and select live data and select API_BUSINESS_PARTNER service as API_BUSINESS_PARTNER in Exercise 3.
 
-```
+<br>![](/exercises/ex7/images/odata.png)
 
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
+3. Run the Application and this will automatically open a new tab in the browser. 
 
+<br>![](/exercises/ex7/images/fioripreview.png)
+
+## Exercise 7.2  Check the service details and explore the application
+
+1. Click on RiskApplication and click on go which shows the data.
+
+<br>![](/exercises/ex7/images/riskapp.png)
+
+2. you can edit the entry and assign a business partner id into a certain risk.
+
+<br>![](/exercises/ex7/images/addbpid.png)
+
+## Exercise 7.3  Go to SAP HANA Database explorer and check the tables
+
+1. Click on database exploerer icon under SAP HANA Projects, which will open the SAP HANA Database explorer view. 
+
+<br>![](/exercises/ex7/images/dbx.png)
+
+2. You can check under the tables to see all generated tables via CDS.
+
+<br>![](/exercises/ex7/images/dbxdata.png)
 
 ## Summary
 
-You've now ...
+You've now successfully have a full stack application with SAP HANA Cloud as database and Cloud Application Programming Model ( CAP ) with Fiori representation.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+
 
