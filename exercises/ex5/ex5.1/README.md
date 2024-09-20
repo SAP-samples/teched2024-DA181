@@ -40,4 +40,4 @@
 ## Summary
 
 Now the UI of your application is ready
-Continue to - [Bind your application to an HDI Container ](../ex6/README.md)
+Continue to - [Bind your application to an HDI Container ](../../ex6/README.md)
