@@ -41,5 +41,5 @@ cds add hana
 
 You've now created a new HDI container and bound to your CAP Project
 
-Continue to - [Exercise 7 - Run your application & view the data in SAP HANA Database Explorer ](exercises/ex7/README.md)
+Continue to - [Exercise 7 - Run your application & view the data in SAP HANA Database Explorer ](../ex7/README.md)
 
