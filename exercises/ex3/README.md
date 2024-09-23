@@ -1,4 +1,4 @@
-# Exercise 3 - Add Business Partner Data
+# Exercise 3 - Add Business Partner as External Resource
 
 In this exercise, you can add the business partner into your project by adding the S/4 system as the destination in SAP Business Technology Platform ( BTP) 
 

@@ -43,5 +43,5 @@ Create a risk management app with risks and mitigation. Each risk refers to a mi
 
 Joule lets you create CAP-based data entities and OData services with contextual sample data with just one text prompt. 
 
-Continue to - [Exercise 3 - Add Business Partner Data ](../ex3/README.md)
+Continue to - [Exercise 3 - Add Business Partner as External Resource ](../ex3/README.md)
 
