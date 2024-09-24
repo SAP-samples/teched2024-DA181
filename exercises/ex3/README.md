@@ -22,7 +22,7 @@ In this exercise, you can add the business partner into your project by adding t
 
 <br>![](/exercises/ex3/images/opengrapmod.png)
 
-2. Click on Risks entity and select add relationship.
+2. Click on Risks entity and select add relationship. Move the cursor to the white space to see the below dialog box.
 
 <br>![](/exercises/ex3/images/addrelationship.png)
 
@@ -40,11 +40,14 @@ In this exercise, you can add the business partner into your project by adding t
 
 <br>![](/exercises/ex3/images/storyboardservice.png)
 
-2. Add a new projection by clicking on new entity 
+2. Add a new entity which opens a new projection to your service.
 
 <br>![](/exercises/ex3/images/addprojection.png)
 
-3. Select API_BUSINESS_PARTNER_A_BusinessPartner and uncheck <all properties> and choose the columns of your choice. In this example, we will choose BusinessPartner, FirstName, LastName.
+3. Select API_BUSINESS_PARTNER_A_BusinessPartner and uncheck <all properties> and choose the columns of your choice. In this example, we will choose 
+1.BusinessPartner
+2.FirstName
+3.LastName
 
 <br>![](/exercises/ex3/images/selectcolumns.png)
 

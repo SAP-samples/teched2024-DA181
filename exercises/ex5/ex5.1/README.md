@@ -8,11 +8,11 @@
 
 <br>![](/exercises/ex5/ex5.1/images/editpagemap.png)
 
-3. In the columns list, delete the criticality column.
+3. In the columns list, delete the <strong>criticality</strong> column.
 
 <br>![](/exercises/ex5/ex5.1/images/delcrit.png)
 
-4. Select the column impact and on the right pane, scroll down to find the criticality and set it to criticality.
+4. Select the column <strong>impact</strong> and on the right pane, scroll down to find the criticality property and set the value to criticality.
 
 <br>![](/exercises/ex5/ex5.1/images/selcrit.png)
 
@@ -20,7 +20,11 @@
 
 <br>![](/exercises/ex5/ex5.1/images/criticon.png)
 
-6. Go back to the page map as shown in step 2 and now select the configure page of object page section.
+6. Go back to the page map as shown in step 2.
+
+<br>![](/exercises/ex5/ex5.1/images/objpage.png)
+
+7. Select the configure icon of object page section.
 
 <br>![](/exercises/ex5/ex5.1/images/editobject.png)
 
