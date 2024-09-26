@@ -1,0 +1,6 @@
+ID;name;description;impact;criticality;mitigation_ID
+428dd541-625c-4e6a-9682-ce278283622d;Data Breach;Unauthorized access to sensitive data could result in financial loss and reputational damage.;5000;7;4d93aa93-d045-47dc-9820-a5da0b632c91
+61af1725-61dd-42a3-b1bf-f7391c87b52b;Fire Hazard;Potential fire hazard due to faulty electrical wiring and flammable materials.;10000;9;428dd541-625c-4e6a-9682-ce278283622d
+4d93aa93-d045-47dc-9820-a5da0b632c91;Power Outage;Power outage could disrupt operations and lead to financial losses.;8000;6;61af1725-61dd-42a3-b1bf-f7391c87b52b
+2ff0bf5d-0861-454c-b99a-ad9a12785504;Employee Error;Human error could result in data loss or security breaches.;3000;5;2ff0bf5d-0861-454c-b99a-ad9a12785504
+c8b4d61a-16c0-4781-a6a8-6ac86ba21424;Equipment Failure;Equipment failure could lead to production delays and financial losses.;6000;8;c8b4d61a-16c0-4781-a6a8-6ac86ba21424
