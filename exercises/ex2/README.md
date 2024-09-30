@@ -18,7 +18,7 @@ In this exercise, we will create a risk management application, helps organizati
 
 4. Copy the below text to your joule assistant to generate the data model and services.
 ```
-Create a risk management app with risks and mitigation. Each risk refers to a mitigation. Add realistic properties to each entity, risks should include a property impact and criticality which should be an integer. Impacts should be in range of 1 to 20000 dollars. Mitigation should include a counter
+Create a risk management app with risks and mitigation. Each risk may refers to one or more mitigation. Add realistic properties to each entity, risks should include a property impact and criticality which should be an integer. Impacts should be in range of 1 to 20000 dollars. Mitigation should include a counter
 ```
 
 5. You will now see the suggested data model as per the prompt given to the Joule. 
