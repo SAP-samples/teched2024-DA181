@@ -1,4 +1,4 @@
-# Exercise 7 - Run your application & view the data in SAP HANA Database Explorer
+# Exercise 7 - Run your application 
 
 In this exercise, we will configure the run configuration and set the database as SAP HANA Cloud, run the application and also see the SAP HANA Database explorer. 
 
@@ -26,16 +26,6 @@ In this exercise, we will configure the run configuration and set the database a
 2. you can edit the entry and assign a business partner id into a certain risk.
 
 <br>![](/exercises/ex7/images/addbpid.png)
-
-## Exercise 7.3  Go to SAP HANA Database explorer and check the tables
-
-1. Click on database exploerer icon under SAP HANA Projects, which will open the SAP HANA Database explorer view. 
-
-<br>![](/exercises/ex7/images/dbx.png)
-
-2. You can check under the tables to see all generated tables via CDS.
-
-<br>![](/exercises/ex7/images/dbxdata.png)
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Exercise 6 - Bind your application to an HDI Container
+# Exercise 6 - Bind your application to an HDI Container & View the data in SAP HANA Database Explorer
 
 In this exercise, we will create  a [SAP HANA Deployment Infrasturer ( HDI ) container](https://help.sap.com/docs/SAP_HANA_PLATFORM/3823b0f33420468ba5f1cf7f59bd6bd9/3ef0ee9da11440e4b01708455b8497a9.html) and bind that container to our project and deply the project to SAP HANA Cloud.
 
@@ -32,14 +32,24 @@ cds add hana
 
 <br>![](/exercises/ex6/images/bound.png)
 
-6. Click on the rocket icon, and deploy the SAP HANA Project.
+6. Click on the rocket icon, and deploy the Project to your SAP HANA Cloud Instance.
 
 <br>![](/exercises/ex6/images/deploy.png)
+
+## Exercise 6.2  Go to SAP HANA Database explorer and check the tables
+
+1. Click on database exploerer icon under SAP HANA Projects, which will open the SAP HANA Database explorer view. 
+
+<br>![](/exercises/ex7/images/dbx.png)
+
+2. You can check under the tables to see all generated tables via CDS.
+
+<br>![](/exercises/ex7/images/dbxdata.png)
 
 
 ## Summary
 
-You've now created a new HDI container and bound to your CAP Project
+You've now created a new HDI container and bound to your CAP Project. You can deploy the project to your SAP HANA Cloud instance and view the data in SAP HANA database explorer.
 
-Continue to - [Exercise 7 - Run your application & view the data in SAP HANA Database Explorer ](../ex7/README.md)
+Continue to - [Exercise 7 - Run your application](../ex7/README.md)
 
