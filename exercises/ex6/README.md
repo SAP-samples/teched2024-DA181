@@ -15,7 +15,7 @@ cds add hana
 
 <br>![](/exercises/ex6/images/bind.png)
 
-3. Click on Create a new service instance
+3. Click on [Create a new service instance]
 
 <br>![](/exercises/ex6/images/create.png)
 
