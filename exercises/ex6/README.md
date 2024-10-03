@@ -32,7 +32,15 @@ cds add hana
 
 <br>![](/exercises/ex6/images/bound.png)
 
-6. Click on the rocket icon, and deploy the Project to your SAP HANA Cloud Instance.
+6. Open the Database Explorer by clicking on the cubical icon.
+
+<br>![](/exercises/ex6/images/dbx.png)
+
+7. In the HDI container, you will see that the none of the artifacts are generated. Refer to the image below.
+
+<br>![](/exercises/ex6/images/emptytables.png)
+
+8. Go back to your SAP Build Code and deploy your project by clicking on the rocket icon, and this will deploy your project to your SAP HANA Cloud Instance
 
 <br>![](/exercises/ex6/images/deploy.png)
 
@@ -42,9 +50,25 @@ cds add hana
 
 <br>![](/exercises/ex7/images/dbx.png)
 
-2. You can check under the tables to see all generated tables via CDS.
+2. Generated artifacts are shown as below:
 
-<br>![](/exercises/ex7/images/dbxdata.png)
+<br>![](/exercises/ex6/images/gen.png)
+
+3. You can now see the initial data for the risk and mitigation is now deployed to the HDI container.
+
+<br>![](/exercises/ex6/images/risk.png)
+
+<br>![](/exercises/ex6/images/miti.png)
+
+
+
+
+
+
+
+
+
+
 
 
 ## Summary
