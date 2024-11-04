@@ -4,13 +4,17 @@
 
 <br>![](/exercises/ex0/images/devspace.png)
 
-2. If your dev space is running click on stop and then click on the edit option as shown below.
+2. Create a new dev space
 
-<br>![](/exercises/ex0/images/addplugin.png)
+<br>![](/exercises/ex0/images/createdev.png)
 
-3. Add the SAP HANA Database explorer Extensions and save as shown below
+3. Create a new dev space and add the SAP HANA Database explorer Extensions and click on create dev space button.
 
-<br>![](/exercises/ex0/images/selectplugin.png)
+<br>![](/exercises/ex0/images/addext.png)
+
+4. You will see that the newly created dev space is Starting. once its running you can go back to the SAP Build Code Lobby and create a full stack project.
+
+<br>![](/exercises/ex0/images/devstart.png)
 
 ## Summary
 
