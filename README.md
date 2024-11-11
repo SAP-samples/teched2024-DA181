@@ -12,7 +12,7 @@ Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This reposit
 
 1. You have an SAP BTP Trial account [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
 2. You have completed the [Setup SAP Build Code](https://developers.sap.com/tutorials/build-code-setup.html) tutorial.
-
+3. You have set up [SAP HANA Cloud Instance](https://developers.sap.com/group.hana-cloud-get-started-1-trial.html)
 
 ## Exercises
 
