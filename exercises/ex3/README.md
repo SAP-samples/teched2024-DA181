@@ -3,7 +3,7 @@
 In this exercise, you can add the business partner into your project by adding the S/4 system as the destination in SAP Business Technology Platform ( BTP).
 
 
-**NOTE: Continue with the next steps only if you have an S/4 System. You can Skip to [Exercise 3.1 - Add Business Partner Service]((exercises/ex3/ex3.1/README.md)) to add the mock Business Partner Data**
+**NOTE: Continue with the next steps only if you have an S/4 System. You can Skip to [Exercise 3.1 - Add Business Partner Service](../ex4/README.md) to add the mock Business Partner Data**
 
 
 ## Exercise 3.1 Create a S/4 HANA Destination in SAP Business Technology Platform
