@@ -20,7 +20,7 @@ Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This reposit
 - [Exercise 1 - Create a Full-Stack Project in SAP Build Code](https://developers.sap.com/tutorials/build-code-getting-started..html)
 - [Exercise 2 - Create Data Model & Service with Joule](exercises/ex2/)
 - [Exercise 3 - Add Business Partner Data ](exercises/ex3/)
-    - [Exercise 3.1 - Add Business Partner Service](exercises/ex2/ex3.1/)
+    - [Exercise 3.1 - Add Business Partner Service](exercises/ex3/ex3.1/)
 - [Exercise 4 - Add Application Logic](exercises/ex4/)
 - [Exercise 5 - Add UI to your application ](exercises/ex5/)
     -  [Exercise 5.1 - Modify the UI ](exercises/ex5/ex5.1/)
