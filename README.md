@@ -22,6 +22,7 @@ Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This reposit
 - [Exercise 3 - Add Application Logic](exercises/ex3/)
 - [Exercise 4 - Add Business Partner Data ](exercises/ex4/)
     - [Exercise 4.1 - Add Business Partner Service](exercises/ex4/ex4.1/)
+    - [Exercise 4.2 - Edit the Data Model & Service with Graphical Modeller](exercises/ex4/ex4.2/)
 - [Exercise 5 - Add UI to your application ](exercises/ex5/)
     -  [Exercise 5.1 - Modify the UI ](exercises/ex5/ex5.1/)
 - [Exercise 6 - Bind your application to an HDI Container & view the data in SAP HANA Database Explorer ](exercises/ex6/)

@@ -186,5 +186,5 @@ The handler is invoked when your BusinessPartner service is called for a READ, s
 
 You have now successfully extended the CAP service with the consumption of an external Business Partner Service
 
-Continue to -Continue to -[Exercise 5 - Add UI to your application ](exercises/ex5/)
+Continue to -[Exercise 4.2 - Edit the Data Model & Service with Graphical Modeller](exercises/ex4/ex4.2/)
 
