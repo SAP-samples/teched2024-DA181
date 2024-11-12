@@ -31,5 +31,7 @@ In this exercise, we will configure the run configuration and set the database a
 
 You now have successfully built a full stack application with SAP HANA Cloud as database and Cloud Application Programming Model ( CAP ) with Fiori representation.
 
+Check this [Exercise 8 - Inteligent SQL Assistant Console in Business Application Studios (BAS)  ](exercises/ex8/)
+
 
 
