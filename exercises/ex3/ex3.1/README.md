@@ -8,7 +8,12 @@ In this exercise, you will extend your CAP service with the consumption of an ex
 
 2. In API Resources, select API Specification. From the list of files, download the EDMX file.
 
+<br>![](/exercises/ex3/ex3.1//images/upload.png)
+
+In the project explorer, right-click on the project’s root folder and choose Upload. Select the API_BUSINESS_PARTNER.edmx file and upload it to your project folder.
+
 <br>![](/exercises/ex3/ex3.1//images/bpodata.png)
+
 
 3. In SAP Build Code, navigate to the project root folder and upload the downloaded API_BUSINESS_PARTNER.edmx. Add the below command in the terminal.
 
