@@ -23,10 +23,10 @@ cds import API_BUSINESS_PARTNER.edmx --as cds
 
 <br>![](/exercises/ex3/ex3.1//images/cdsext.png)
 
-5. In your project, open the db/schema.cds file and enter the code listed below at the very end of the file.
+5. In your project, add the below code after the namespace (your project name) in the db/schema.cds file 
 
 ```cds
-namespace techedda181demo;
+//namespace techedda181demo;
 
 using { API_BUSINESS_PARTNER } from '../srv/external/API_BUSINESS_PARTNER.cds';
 
