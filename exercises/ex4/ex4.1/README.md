@@ -1,18 +1,18 @@
-# Exercise 3.1 - Adding Business Partner Service
+# Exercise 4.1 - Adding Business Partner Service
 
 In this exercise, you will extend your CAP service with the consumption of an external Business Partner service.
 
 1. In this step, go to the [SAP Business Accerlator Hub](https://api.sap.com/) and find the  [Business Partner API (A2X)](https://api.sap.com/api/API_BUSINESS_PARTNER/overview) 
 
-<br>![](/exercises/ex3/ex3.1//images/bpapi.png)
+<br>![](/exercises/ex4/ex4.1//images/bpapi.png)
 
 2. In API Resources, select API Specification. From the list of files, download the EDMX file.
 
-<br>![](/exercises/ex3/ex3.1//images/bpodata.png)
+<br>![](/exercises/ex4/ex4.1//images/bpodata.png)
 
 In the project explorer, right-click on the project’s root folder and choose Upload. Select the API_BUSINESS_PARTNER.edmx file and upload it to your project folder.
 
-<br>![](/exercises/ex3/ex3.1//images/upload.png)
+<br>![](/exercises/ex4/ex4.1//images/upload.png)
 
 3. In SAP Build Code, navigate to the project root folder and upload the downloaded API_BUSINESS_PARTNER.edmx. Add the below command in the terminal.
 
@@ -21,7 +21,7 @@ cds import API_BUSINESS_PARTNER.edmx --as cds
 ```
 4. Navigate into the srv/external/API_BUSINESS_PARTER.cds. This contains the schema definition of the external service.
 
-<br>![](/exercises/ex3/ex3.1//images/cdsext.png)
+<br>![](/exercises/ex4/ex4.1//images/cdsext.png)
 
 5. In your project, add the below code after the namespace (your project name) in the db/schema.cds file 
 
@@ -93,21 +93,21 @@ annotate techedda181demoSrv with @requires :
 NOTE : Please cross check on the name of the service and the entities
 ```
 
-# Exercise 3.2 Connect your application to the Business Partner API Sandbox Enviroment
+# Exercise 4.2 Connect your application to the Business Partner API Sandbox Enviroment
 
 Now you have a new service exposed with a definition based on the imported CDS file. However, the CDS file only contains the schema and not the connectivity to the backend, so there is no data yet. In this case, you do not create local data as with your risks and mitigations entities, but you connect your service to the Sandbox environment of the SAP Business Accelerator Hub for the Business Partner API that you want to use. To use the API Business Hub Sandbox APIs, you require an API key. This key will authenticate your application with the API endpoint.
 
 1. Go to the [SAP Business Accerlator Hub](https://api.sap.com/) and make sure you are logged in.
 
-<br>![](/exercises/ex3/ex3.1//images/apilogin.png)
+<br>![](/exercises/ex4/ex4.1//images/apilogin.png)
 
 2. Navigate to the Business Partner API (SAP S/4HANA Cloud → Business Partner (A2X)).In the upper-right corner, choose Show API Key to see your API key.
 
-<br>![](/exercises/ex3/ex3.1//images/apikey.png)
+<br>![](/exercises/ex4/ex4.1//images/apikey.png)
 
 3. Copy the API key
 
-<br>![](/exercises/ex3/ex3.1//images/copyapi.png)
+<br>![](/exercises/ex4/ex4.1//images/copyapi.png)
 
 4. Go to your project in the SAP Build Code and add the below and replace the <YOUR-API-KEY> with the api key copied from the SAP Business Accerlator Hub.
 
@@ -115,7 +115,7 @@ Now you have a new service exposed with a definition based on the imported CDS f
 apikey=<YOUR-API-KEY>
 ```
 You are going to use the API key to call the Business Partner API of the sandbox system provided through the SAP Business Accelerator Hub.
-<br>![](/exercises/ex3/ex3.1//images/apikeycode.png)
+<br>![](/exercises/ex4/ex4.1//images/apikeycode.png)
 
 5. Open the package.json file and add the credentials configuration to the API_BUSINESS_PARTNER configuration.
 
@@ -129,7 +129,7 @@ You are going to use the API key to call the Business Partner API of the sandbox
 
 6. It should look like the following 
 
-<br>![](/exercises/ex3/ex3.1//images/json.png)
+<br>![](/exercises/ex4/ex4.1//images/json.png)
 
 7. Open service.js and replace the following.
 
@@ -186,5 +186,5 @@ The handler is invoked when your BusinessPartner service is called for a READ, s
 
 You have now successfully extended the CAP service with the consumption of an external Business Partner Service
 
-Continue to -Continue to - [Exercise 4 - Add Application Logic](../ex4/README.md)
+Continue to -Continue to -[Exercise 5 - Add UI to your application ](exercises/ex5/)
 

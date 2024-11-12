@@ -1,71 +1,60 @@
-# Exercise 3 - Add Business Partner as External Resource
+# Exercise 3 - Add Application Logic
 
-In this exercise, you can add the business partner into your project by adding the S/4 system as the destination in SAP Business Technology Platform ( BTP).
+In this exercise, lets create a logic for the service with the help of Joule. We have our risks and mitigation as our entities, lets create a logic where if the impact of risk is greather than 10000, set the criticality of that risk to high or set it to warning.
 
+1. Go to your storyboard, under the services, open the graphical modeller, choose the risk entity and select add logic.
 
-**NOTE: Continue with the next steps only if you have an S/4 System. You can Skip to [Exercise 3.1 - Add Business Partner Service](../ex3/ex3.1/README.md) to add the mock Business Partner Data**
+<br>![](/exercises/ex3/images/addlogic.png)
 
+2. Once the dialog box appears, select the defaults.
 
-## 1 Create a S/4 HANA Destination in SAP Business Technology Platform
+<br>![](/exercises/ex3/images/dialoglogic.png)
 
-1. [Setup a Destination in SAP Business Technology Platform ( BTP )](https://help.sap.com/docs/business-rules/business-rules-capability-for-neo-environment/configure-destination-for-sap-s-4hana-cloud)
+3. Select the handlers as shown below
 
-## 2 Add the S/4 system in your application
+<br>![](/exercises/ex3/images/risklogicedit.png)
 
-1. Go to SAP Build Code, Click on Service Center > Service > Select a Provider : SAP System > Under Services, you will now see the destination created in Exercise 3.1
+4. Open code editor, select application logic
 
-<br>![](/exercises/ex3/images/adds4.png)
+<br>![](/exercises/ex3/images/applicationlogicopen.png)
 
-2. Go to Storyboard view and you will now see the external resources added : API_BUSINESS_PARTNER
+5. Copy the below text
+```
+if the impact of the current risk is greater than 10000 dollars set the criticality to 1 otherwise to 2
+```
+6. You can now accept the suggested code and the new changes will be reflected in your project.
 
-<br>![](/exercises/ex3/images/storyboardbupa.png)
+<br>![](/exercises/ex3/images/joulesuggestion.png)
 
-## 3 Edit the Data Model with Graphical Modeller
+7. code is as follows :
+```javascript
+/**
+ * 
+ * @After(event = { "READ" }, entity = "techedda181demoSrv.Risks")
+ * @param {(Object|Object[])} results - For the After phase only: the results of the event processing
+ * @param {Object} request - User information, tenant-specific CDS model, headers and query parameters
+*/
+module.exports = async function(results, request) {
+    if (!results) return;
 
-1. Go to Storyboard, click on the downward arrow and open the graphical modeller
+    const { Risks } = cds.entities;
 
-<br>![](/exercises/ex3/images/opengrapmod.png)
+    // Ensure results is an array
+    if (!Array.isArray(results)) {
+        results = [results];
+    }
 
-2. Click on Risks entity and select add relationship. Move the cursor to the white space to see the below dialog box.
-
-<br>![](/exercises/ex3/images/addrelationship.png)
-
-3. Add the new relationship as shown below:
-
-<br>![](/exercises/ex3/images/newrelationship.png)
-
-4. Updated data model will look as shown below:
-
-<br>![](/exercises/ex3/images/modifieddm.png)
-
-## 4 Edit the Service
-
-1. Click on Service entity on storyboard and select open Graphical Modeller.
-
-<br>![](/exercises/ex3/images/storyboardservice.png)
-
-2. Add a new entity which opens a new projection to your service.
-
-<br>![](/exercises/ex3/images/addprojection.png)
-
-3. Select API_BUSINESS_PARTNER_A_BusinessPartner and uncheck <all properties> and choose the columns of your choice. In this example, we will choose 
-1.BusinessPartner
-2.FirstName
-3.LastName
-
-<br>![](/exercises/ex3/images/selectcolumns.png)
-
-4. Newly updated service definition will look as follows.
-
-<br>![](/exercises/ex3/images/newservicedefinition.png)
-
-5. Updated storyboard with additon of business partner in data model & services.
-
-<br>![](/exercises/ex3/images/updatedstoryboardbupa.png)
-
+    for (const risk of results) {
+        if (risk.impact !== undefined) {
+            risk.criticality = risk.impact > 10000 ? 1 : 2;
+        }
+    }
+};
+```
 
 ## Summary
 
-After completing this exercise, you have now added business partner and have uodated the data model & service definition with the new entity.
+You've now added a service logic to your risk management application.
 
-Continue to - [Exercise 4 - Add Application Logic](../ex4/README.md)
+Continue to  [Exercise 4 - Add Business Partner Data ](exercises/ex3/) only if you have an existing S/4 system. if not skip Exercise 4 and go to  [Exercise 4.1 - Add Business Partner Service](exercises/ex3/ex3.1/) where you can mock the S/4 Cloud - Business Partner data and consume it in your application.
+
