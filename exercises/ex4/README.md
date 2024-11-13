@@ -24,4 +24,4 @@ In this exercise, you can add the business partner into your project by adding t
 
 After completing this exercise, you have now added business partner and have uodated the data model & service definition with the new entity.
 
-Continue to - [Exercise 4.2 - Edit the Data Model & Service with Graphical Modeller](exercises/ex4/ex4.2/)
+Continue to - [Exercise 4.2 - Edit the Data Model & Service with Graphical Modeller](../ex4/ex4.2/README.md)

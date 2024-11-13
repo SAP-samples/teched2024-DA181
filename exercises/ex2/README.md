@@ -43,5 +43,5 @@ Create a risk management app with risks and mitigations. Each risk may refer to 
 
 Joule lets you create CAP-based data entities and OData services with contextual sample data with just one text prompt. 
 
-Continue to - [Exercise 3 - Add Application Logic](exercises/ex3/)
+Continue to - [Exercise 3 - Add Application Logic](../ex3/README.md)
 

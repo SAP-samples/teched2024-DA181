@@ -182,9 +182,15 @@ You've now created a custom handler for your service. This time it called on for
 
 The handler is invoked when your BusinessPartner service is called for a READ, so whenever there’s a request for business partner data, this handler is called. It ensures the request for the business partner is directed to the external business partner service. Furthermore, you have added a where clause to the request, which selects only business partners where the first and last name is set.
 
+# Edit the Data Model & Service Definition with Business Partner
+
+
+
+
+
 ## Summary
 
 You have now successfully extended the CAP service with the consumption of an external Business Partner Service
 
-Continue to -[Exercise 4.2 - Edit the Data Model & Service with Graphical Modeller](exercises/ex4/ex4.2/)
+Continue to -[Exercise 4.2 - Edit the Data Model & Service with Graphical Modeller](../ex4.2/README.md)
 

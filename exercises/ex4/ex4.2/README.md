@@ -49,5 +49,5 @@ In this exercise, you will add the Business Partner data in your data model and 
 
 You have now added Business Partner into your data model and the service definition.
 
-Continue to - [Exercise 5 - Add UI to your application ](exercises/ex5/)
+Continue to - [Exercise 5 - Add UI to your application ](../../ex5/README.md)
 

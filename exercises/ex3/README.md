@@ -56,5 +56,5 @@ module.exports = async function(results, request) {
 
 You've now added a service logic to your risk management application.
 
-Continue to  [Exercise 4 - Add Business Partner Data ](exercises/ex4/) only if you have an existing S/4 system. if not skip Exercise 4 and go to  [Exercise 4.1 - Add Business Partner Service](exercises/ex4/ex4.1/) where you can mock the S/4 Cloud - Business Partner data and consume it in your application.
+Continue to  [Exercise 4 - Add Business Partner Data ](../ex4/README.md) only if you have an existing S/4 system. if not skip Exercise 4 and go to  [Exercise 4.1 - Add Business Partner Service](../ex4/ex4.1/README.md) where you can mock the S/4 Cloud - Business Partner data and consume it in your application.
 
