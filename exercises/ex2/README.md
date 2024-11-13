@@ -37,6 +37,24 @@ Create a risk management app with risks and mitigations. Each risk may refer to 
 
 <br>![](/exercises/ex2/images/cdsfiles.png)
 
+# 2.2 Add Sample Data using Joule
+
+1. Go to guided development and type the prompt as shown below. 
+
+```
+Generate sample data. for risks and mitigations
+```
+`
+2. Accept the data and you can see 2 csv files in the project test folder.
+
+![alt text]({FE7255FC-AF99-4224-A56A-47DA10941159}.png)
+
+3. Go to Data editor and review the data.
+
+
+
+
+
 
 
 ## Summary
