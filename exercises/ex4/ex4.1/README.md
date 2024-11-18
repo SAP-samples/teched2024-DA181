@@ -155,7 +155,7 @@ service techedda181demoSrv
         projection on my.Mitigations;
 
     entity A_BusinessPartner as
-        projection on API_BUSINESS_PARTNER.A_BusinessPartner
+        projection on BusinessPartnerA2X.A_BusinessPartner
         {
             BusinessPartner,
             FirstName,
