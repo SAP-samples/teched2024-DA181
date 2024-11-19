@@ -201,12 +201,12 @@ class techedreviseddemoSrv extends LCAPApplicationService {
 
        // connect to remote service
        const BPsrv = await cds.connect.to("BusinessPartnerA2X");
-       const { BusinessPartners } = this.entities;
+       const { A_BusinessPartner } = this.entities;
        /**
     * Event-handler for read-events on the BusinessPartners entity.
     * Each request to the API Business Hub requires the apikey in the header.
     */
-       this.on("READ", BusinessPartners, async (req) => {
+       this.on("READ", A_BusinessPartner, async (req) => {
            // The API Sandbox returns alot of business partners with empty names.
            // We don't want them in our application
            req.query.where("LastName <> '' and FirstName <> '' ");
