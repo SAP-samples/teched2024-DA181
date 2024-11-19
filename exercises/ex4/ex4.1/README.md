@@ -2,31 +2,6 @@
 
 In this exercise, you will extend your CAP service with the consumption of an external Business Partner service.
 
-1. In this step, login to the [SAP Business Accerlator Hub](https://api.sap.com/) and find the  [Business Partner API (A2X)](https://api.sap.com/api/API_BUSINESS_PARTNER/overview) 
-
-```
-NOTE: Remember the Login credentials, you will need it for the upcoming steps later.
-```
-
-<br>![](/exercises/ex4/ex4.1//images/bpapi.png)
-
-2. In API Resources, select API Specification. From the list of files, download the EDMX file.
-
-<br>![](/exercises/ex4/ex4.1//images/bpodata.png)
-
-In the project explorer, right-click on the project’s root folder and choose Upload. Select the API_BUSINESS_PARTNER.edmx file and upload it to your project folder.
-
-<br>![](/exercises/ex4/ex4.1//images/upload.png)
-
-3. In SAP Build Code, navigate to the project root folder and upload the downloaded API_BUSINESS_PARTNER.edmx. Add the below command in the terminal.
-
-```
-cds import API_BUSINESS_PARTNER.edmx --as cds
-```
-4. Navigate into the srv/external/API_BUSINESS_PARTER.cds. This contains the schema definition of the external service.
-
-<br>![](/exercises/ex4/ex4.1//images/cdsext.png)
-
 # Add Business Partner to your Project Storyboard
 
 1. In Project Explorer > Storyboard, Click on '+' on External Resources.
