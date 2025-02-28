@@ -28,15 +28,15 @@
 
 <br>![](/exercises/ex5/ex5.1/images/editobject.png)
 
-7. Go to General Information > Form > Fields > Add Basic field.
+8. Go to General Information > Form > Fields > Add Basic field.
 
 <br>![](/exercises/ex5/ex5.1/images/editobject.png)
 
-8. Add a new column BusinessPartner 
+9. Add a new column BusinessPartner 
 
 <br>![](/exercises/ex5/ex5.1/images/addbp.png)
 
-9. Rename the BusinessPartner_BusinessPartner label to BusinessPartner 
+10. Rename the BusinessPartner_BusinessPartner label to BusinessPartner 
 
 <br>![](/exercises/ex5/ex5.1/images/renamebp.png)
 
