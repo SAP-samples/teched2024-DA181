@@ -4,7 +4,7 @@ In this exercise, we will create a risk management application, helps organizati
 
 ## Exercise 2.1 Generate data model
 
-1. Click on Guide Center and select Generate AI-Powered Development
+1. Open your project & Click on Guide Center and select Generate AI-Powered Development
 
 <br>![](/exercises/ex2/images/guidecenter.png)
 
@@ -39,17 +39,19 @@ Create a risk management app with risks and mitigations. Each risk may refer to 
 
 # 2.2 Add Sample Data using Joule
 
-1. Go to guided development and type the prompt as shown below. 
+1. Go back to the Generative AI-Powered Development, Go to Sample data > Open Joule. Enter the below prompt.
+```
+Generate sample data
+```
+![alt text]({D5245E7B-A590-470D-B90F-87FC8E88D5E1}.png)
 
-```
-Generate sample data. for risks and mitigations
-```
-`
 2. Accept the data and you can see 2 csv files in the project test folder.
 
 ![alt text]({FE7255FC-AF99-4224-A56A-47DA10941159}.png)
 
 3. Go to Data editor and review the data.
+
+![alt text]({BA0BA16D-280F-499D-9CC0-46189648A513}.png)
 
 
 

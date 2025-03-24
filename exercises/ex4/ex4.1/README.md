@@ -30,19 +30,21 @@ In this exercise, you will extend your CAP service with the consumption of an ex
 
 ![](image-2.png)
 
-2.  Click on the risks entity and click on show details.
+2.  Click on the risks entity and click on Add relationship and click on an empty space.
+![alt text]({49D580CE-8288-4D51-B0B3-15779AA08018}.png)
 
-![alt text](image-3.png)
 
-3. Go to relationships and click '+'. Under Target Identity choose 'BusinessPartnerA2X.A_BusinessPartner' and add BusinessPartner as name as shown below.Click the check sign to save.
+3. Once the dialog box opens, look for the target entity shown in the image below and rename the a_BusinessPartner to BusinessPartner.
 
-![alt text]({BA11FCDA-0E16-449E-A404-701727A42527}.png)
+![alt text]({EC594C94-1D6F-4187-B26A-35521CA57A15}.png)
 
 4. Now the data model would look as follows :
 
 ![alt text](image-4.png)
 
-5. Open the graphical modeller under service definition and click on the risks entity, and click Add entity. 
+5. Open the graphical modeller under service definition, click on the risks entity, and click Add entity. 
+![alt text]({52906F64-39B0-4A69-A32B-F86D0DF348C4}.png)
+
 
 ![alt text]({005DDCF5-7FBB-4F28-B6A6-E19DC936DA59}.png)
 
@@ -54,11 +56,18 @@ In this exercise, you will extend your CAP service with the consumption of an ex
 
 ![alt text]({2B999514-A037-4AFD-BF0A-1B1242D5C554}.png)
 
-8. Storyboard will look as follows: 
+
+8. Graphical Model & Storyboard will look as follows: 
+
+![alt text]({8C9757B0-5323-4ED6-9466-AB2A46A3514A}.png)
 
 ![alt text]({C2A0C7F6-67EB-4BA2-AF39-EDEEE4421B16}.png)
 
-9. In your project soruce code  db/schema.cds section, companre the code to the one below.
+````
+NOTE: Step 9 & 10 are optional, and can be used as a reference point to compare the code snippets. In case you are using the below code, make sure to replace the namespace to your project name.  
+````
+
+9. In your project soruce code  db/schema.cds section, compare the code to the one below.
 
 ````
 NOTE: Make sure to check the namespace of your project. You will have to replace it with your own namespace of your project.  
@@ -111,7 +120,7 @@ annotate Mitigations with @assert.unique :
 
 ```
 
-6. Replace the code snippet of srv/service.cds to the below given code. With this code you can now create a projection of your new service.Of the many entities and properties in these entities that are defined in the API_BUSINESS_PARTNER service, you just look at one of the entities (A_BusinessPartner) and just three of its properties - BusinessPartner, LastName, and FirstName - so that your projection is using a subset of everything the original service has to offer.
+10. Replace the code snippet of srv/service.cds to the below given code. With this code you can now create a projection of your new service.Of the many entities and properties in these entities that are defined in the API_BUSINESS_PARTNER service, you just look at one of the entities (A_BusinessPartner) and just three of its properties - BusinessPartner, LastName, and FirstName - so that your projection is using a subset of everything the original service has to offer.
 
 ```cds
 using { BusinessPartnerA2X } from './external/BusinessPartnerA2X.cds';
@@ -170,9 +179,9 @@ Now you have a new service exposed with a definition based on the imported CDS f
 apikey=<YOUR-API-KEY>
 ```
 You are going to use the API key to call the Business Partner API of the sandbox system provided through the SAP Business Accelerator Hub.
-![alt text](image-5.png)
+![alt text]({C538F051-4636-4EF6-8020-3E923B76B187}.png)
 
-5. Open the package.json file and add the credentials configuration to the API_BUSINESS_PARTNER configuration.
+5. Open the package.json file and add the credentials configuration to the BusinessPartnerA2X configuration.
 
 ```json
 
@@ -184,7 +193,7 @@ You are going to use the API key to call the Business Partner API of the sandbox
 
 6. It should look like the following 
 
-<br>![](/exercises/ex4/ex4.1//images/json.png)
+![alt text]({0890E6E0-0967-46A4-A18A-9A7AF97960B3}.png)
 
 7. Open service.js and replace the following.
 
@@ -227,6 +236,11 @@ module.exports = {
     techedreviseddemoSrv
 };
 ```
+
+```
+NOTE : Replace the techedreviseddemoSrv to your project srv name
+```
+
 
 You've now created a custom handler for your service. This time it called on for the READ event.
 

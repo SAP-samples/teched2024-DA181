@@ -4,6 +4,8 @@ In this exercise, lets create a logic for the service with the help of Joule. We
 
 1. Go to your storyboard, under the services, open the graphical modeller, choose the risk entity and select add logic.
 
+![alt text]({11492D55-E974-4F09-9F4F-49EB5FC6E34D}.png)
+
 <br>![](/exercises/ex3/images/addlogic.png)
 
 2. Once the dialog box appears, select the defaults.
@@ -18,11 +20,13 @@ In this exercise, lets create a logic for the service with the help of Joule. We
 
 <br>![](/exercises/ex3/images/applicationlogicopen.png)
 
-5. Copy the below text
+5. Enter the below prompt in Joule 
 ```
 if the impact of the current risk is greater than 10000 dollars set the criticality to 1 otherwise to 2
 ```
-6. You can now accept the suggested code and the new changes will be reflected in your project.
+![alt text]({CCF7F81C-FF03-45D5-B2C8-E05903D3FB9C}.png)
+
+6. You can now review & accept the suggested code and the new changes will be reflected in your project.
 
 <br>![](/exercises/ex3/images/joulesuggestion.png)
 

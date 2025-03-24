@@ -21,6 +21,6 @@
 Now that you have your dev space configured, go to the next step to create the project.
 Continue to -SAP Learning [Exercise 1 - Create a Full-Stack Project in SAP Build Code](https://developers.sap.com/tutorials/build-code-new-project.html)
 
-Once you have successfully created the Full-Stack Project, proceed next to [Exercise 2 - Create Data Model & Service with Joule](../ex2/README.md)
+Once you have successfully created the Full-Stack Project, click on the project proceed next to [Exercise 2 - Create Data Model & Service with Joule](../ex2/README.md)
 
 
