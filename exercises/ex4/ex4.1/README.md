@@ -63,20 +63,43 @@ In this exercise, you will extend your CAP service with the consumption of an ex
 
 ![alt text]({C2A0C7F6-67EB-4BA2-AF39-EDEEE4421B16}.png)
 
-````
-NOTE: Step 9 & 10 are optional, and can be used as a reference point to compare the code snippets. In case you are using the below code, make sure to replace the namespace to your project name.  
-````
 
-9. In your project soruce code  db/schema.cds section, compare the code to the one below.
+# Exercise 4.2 Connect your application to the Business Partner API Sandbox Enviroment
 
-````
-NOTE: Make sure to check the namespace of your project. You will have to replace it with your own namespace of your project.  
-````
+1. Import the API_BUSINESS_PARTNER from [SAP Business Accerlator Hub](https://api.sap.com/) and login with your credentials.
+
+<br>![](/exercises/ex4/ex4.1//images/apilogin.png)
+
+2. Navigate to the Business Partner API (SAP S/4HANA Cloud → Business Partner (A2X)).In the upper-right corner, choose Show API Key to see your API key. This is needed in the later part of the exercise
+
+<br>![](/exercises/ex4/ex4.1//images/apikey.png)
+
+3. Download the EDMX file from the business partner and add it to the main folder.
+
+![alt text]({31A794BA-17E8-4BCA-B593-E888ED8878DD}.png)
+
+4. Import the Business Partner file by running the below cds command in the terminal.
 
 ```cds
-//namespace techedda181demo;
 
-using { BusinessPartnerA2X } from '../srv/external/BusinessPartnerA2X.cds';
+$ cds import API_BUSINESS_PARTNER.edmx
+
+```
+5. The API_BUSINESS_PARTNER.edmx has been imported to the folder srv/external, also it generates API_BUSINESS_PARTNER.csn file. This CSN file used by the CDS framework.
+
+![alt text]({3AFE8A0A-B73A-4461-8D3A-F77554C6E081}.png)
+
+6. The package.json file is now updated in the requires section with the external service.
+
+7. Update the schema.cds to the code given below.
+
+```
+NOTE : Keep in the mind, code can differ from the ones generated via Joule. 
+```
+
+```cds
+
+using { API_BUSINESS_PARTNER } from '../srv/external/API_BUSINESS_PARTNER';
 
 using
 {
@@ -94,7 +117,8 @@ entity Risks : cuid, managed
     criticality : Integer;
     status : String(20);
     mitigations : Association to many Mitigations on mitigations.risk = $self;
-    BusinessPartner : Association to one BusinessPartnerA2X.A_BusinessPartner;
+    newProperty : String(100);
+    BusinessPartner : Association to one API_BUSINESS_PARTNER.A_BusinessPartner;
 }
 
 annotate Risks with @assert.unique :
@@ -108,7 +132,7 @@ entity Mitigations : cuid, managed
         @mandatory;
     description : String(500);
     counter : Integer;
-    status : String(20);
+    effectiveness : String(20);
     risk : Association to one Risks;
 }
 
@@ -117,131 +141,39 @@ annotate Mitigations with @assert.unique :
     title : [ title ],
 };
 
+```
+8. In order to read the entity, create a custom handler.
+
+```cds 
+
+const cds = require('@sap/cds');
+module.exports = cds.service.impl(async function() {
+    const bp = await cds.connect.to('API_BUSINESS_PARTNER');    
+    this.on('READ', 'A_BusinessPartner', async req => {        
+        return bp.run(req.query);       
+    });
+});
 
 ```
 
-10. Replace the code snippet of srv/service.cds to the below given code. With this code you can now create a projection of your new service.Of the many entities and properties in these entities that are defined in the API_BUSINESS_PARTNER service, you just look at one of the entities (A_BusinessPartner) and just three of its properties - BusinessPartner, LastName, and FirstName - so that your projection is using a subset of everything the original service has to offer.
-
-```cds
-using { BusinessPartnerA2X } from './external/BusinessPartnerA2X.cds';
-
-using { techedda181demo as my } from '../db/schema.cds';
-
-@path : '/service/techedda181demo'
-service techedda181demoSrv
-{
-    @odata.draft.enabled
-    entity Risks as
-        projection on my.Risks;
-
-    @odata.draft.enabled
-    entity Mitigations as
-        projection on my.Mitigations;
-
-    entity A_BusinessPartner as
-        projection on BusinessPartnerA2X.A_BusinessPartner
-        {
-            BusinessPartner,
-            FirstName,
-            LastName
-        };
-}
-
-annotate techedda181demoSrv with @requires :
-[
-    'authenticated-user'
-];
-```
-
-```
-NOTE : Please cross check on the name of the service and the entities
-```
-
-# Exercise 4.2 Connect your application to the Business Partner API Sandbox Enviroment
-
-Now you have a new service exposed with a definition based on the imported CDS file. However, the CDS file only contains the schema and not the connectivity to the backend, so there is no data yet. In this case, you do not create local data as with your risks and mitigations entities, but you connect your service to the Sandbox environment of the SAP Business Accelerator Hub for the Business Partner API that you want to use. To use the API Business Hub Sandbox APIs, you require an API key. This key will authenticate your application with the API endpoint.
-
-1. Go to the [SAP Business Accerlator Hub](https://api.sap.com/) and make sure you are logged in.
-
-<br>![](/exercises/ex4/ex4.1//images/apilogin.png)
-
-2. Navigate to the Business Partner API (SAP S/4HANA Cloud → Business Partner (A2X)).In the upper-right corner, choose Show API Key to see your API key.
-
-<br>![](/exercises/ex4/ex4.1//images/apikey.png)
-
-3. Copy the API key
+9. Add the URL of the sandbox by making the following changes in the package.json. Copy the API key which we accessed earlier and add it in the file.
 
 <br>![](/exercises/ex4/ex4.1//images/copyapi.png)
 
-4. Go to your project source code in the SAP Build Code and add the below and replace the <YOUR-API-KEY> with the api key copied from the SAP Business Accerlator Hub. Your project > env > env2
-
-```
-apikey=<YOUR-API-KEY>
-```
-You are going to use the API key to call the Business Partner API of the sandbox system provided through the SAP Business Accelerator Hub.
-![alt text]({C538F051-4636-4EF6-8020-3E923B76B187}.png)
-
-5. Open the package.json file and add the credentials configuration to the BusinessPartnerA2X configuration.
-
 ```json
 
-"credentials": {
-          "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/"
-        }
+      "API_BUSINESS_PARTNER": {
+          "kind": "odata-v2",
+          "model": "srv/external/BusinessPartnerA2X",
+          "credentials": {
+            "url": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_BUSINESS_PARTNER/",
+             "headers": {
+                "APIKey": <API_KEY>
+            }
+          }
+        },
 
 ```
-
-6. It should look like the following 
-
-![alt text]({0890E6E0-0967-46A4-A18A-9A7AF97960B3}.png)
-
-7. Open service.js and replace the following.
-
-```javascript
-const LCAPApplicationService = require('@sap/low-code-event-handler');
-const risks_Logic = require('./code/risks-logic');
-
-class techedreviseddemoSrv extends LCAPApplicationService {
-   async init() {
-
-       this.after('READ', 'Risks', async (results, request) => {
-           await risks_Logic(results, request);
-       });
-
-       // connect to remote service
-       const BPsrv = await cds.connect.to("BusinessPartnerA2X");
-       const { A_BusinessPartner } = this.entities;
-       /**
-    * Event-handler for read-events on the BusinessPartners entity.
-    * Each request to the API Business Hub requires the apikey in the header.
-    */
-       this.on("READ", A_BusinessPartner, async (req) => {
-           // The API Sandbox returns alot of business partners with empty names.
-           // We don't want them in our application
-           req.query.where("LastName <> '' and FirstName <> '' ");
-
-           return await BPsrv.transaction(req).send({
-               query: req.query,
-               headers: {
-                   apikey: process.env.apikey, // /home/user/projects/techedreviseddemo/env/.env1
-               },
-           });
-       });
-
-       return super.init();
-   }
-}
-
-module.exports = {
-    techedreviseddemoSrv
-};
-```
-
-```
-NOTE : Replace the techedreviseddemoSrv to your project srv name
-```
-
-
 You've now created a custom handler for your service. This time it called on for the READ event.
 
 The handler is invoked when your BusinessPartner service is called for a READ, so whenever there’s a request for business partner data, this handler is called. It ensures the request for the business partner is directed to the external business partner service. Furthermore, you have added a where clause to the request, which selects only business partners where the first and last name is set.
