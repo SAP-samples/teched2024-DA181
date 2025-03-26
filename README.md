@@ -24,7 +24,7 @@ NOTE : Only perform the Step 1 on the below exercise 1 & return to the repositor
 - [Exercise 1 - Create a Full-Stack Project in SAP Build Code](https://developers.sap.com/tutorials/build-code-new-project.html)
 - [Exercise 2 - Create Data Model & Service with Joule](exercises/ex2/)
 - [Exercise 3 - Add Application Logic](exercises/ex3/)
-- [Exercise 4 - Add Business Partner Service & Connect your application to the Sandbox](exercises/ex4/ex4.1/)
+- [Exercise 4 - Add Business Partner Service & Connect your application to the Sandbox](exercises/ex4/)
 - [Exercise 5 - Add UI to your application ](exercises/ex5/)
     -  [Exercise 5.1 - Modify the UI ](exercises/ex5/ex5.1/)
 - [Exercise 6 - Bind your application to an HDI Container & view the data in SAP HANA Database Explorer ](exercises/ex6/)
