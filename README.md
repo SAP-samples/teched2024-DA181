@@ -13,15 +13,18 @@ Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This reposit
 1. You have an SAP BTP Trial account [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
 2. You have completed the [Setup SAP Build Code](https://developers.sap.com/tutorials/build-code-setup.html) tutorial.
 3. You have to set up [SAP HANA Cloud Instance](https://developers.sap.com/tutorials/hana-cloud-deploying.html)
+4. You have an account in [SAP Business Accelerator Hub](https://api.sap.com/)
 
 ## Exercises
 
 - [Getting Started - Add SAP HANA Database Extensions in your Dev Space](exercises/ex0/)
+```
+NOTE : Only perform the Step 1 on the below exercise 1 & return to the repository to continue.
+```
 - [Exercise 1 - Create a Full-Stack Project in SAP Build Code](https://developers.sap.com/tutorials/build-code-new-project.html)
 - [Exercise 2 - Create Data Model & Service with Joule](exercises/ex2/)
 - [Exercise 3 - Add Application Logic](exercises/ex3/)
-- [Exercise 4 - Add Business Partner Data ](exercises/ex4/)
-    - [Exercise 4.1 - Add Business Partner Service](exercises/ex4/ex4.1/)
+- [Exercise 4 - Add Business Partner Service & Connect your application to the Sandbox](exercises/ex4/ex4.1/)
 - [Exercise 5 - Add UI to your application ](exercises/ex5/)
     -  [Exercise 5.1 - Modify the UI ](exercises/ex5/ex5.1/)
 - [Exercise 6 - Bind your application to an HDI Container & view the data in SAP HANA Database Explorer ](exercises/ex6/)
