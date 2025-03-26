@@ -85,7 +85,7 @@ Updated schema.cds will be as follows :
 
 ## Connect your application to the Business Partner API Sandbox Enviroment
 
-In order to read the entity, create a custom handler. go to srv > service.js. Copy the below code
+1. In order to read the entity, create a custom handler. go to srv > service.js. Copy the below code
 
 ```cds 
 
@@ -98,13 +98,17 @@ module.exports = cds.service.impl(async function() {
 });
 
 ```
+2. Copy the API Key from SAP Business Accerlator hub. 
 
-9. Add the URL of the sandbox by making the following changes in the package.json. Copy the API key which we accessed earlier and add it in the file.
+![alt text](image-10.png)
 
-<br>![](/exercises/ex4/ex4.1//images/copyapi.png)
+3. Retrieve the SANDBOX_URL from the api hub.
+
+![alt text](image-11.png)
+
+4. Add the URL of the sandbox by making the following changes in the package.json.
 
 ```json
-
       "API_BUSINESS_PARTNER": {
           "kind": "odata-v2",
           "model": "srv/external/API_BUSINESS_PARTNER",
