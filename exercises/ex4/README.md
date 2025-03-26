@@ -100,11 +100,11 @@ module.exports = cds.service.impl(async function() {
 ```
 2. Copy the API Key from SAP Business Accerlator hub. 
 
-![alt text](image-10.png)
+![alt text](image-20.png)
 
 3. Retrieve the SANDBOX_URL from the api hub.
 
-![alt text](image-11.png)
+![alt text](image-21.png)
 
 4. Add the URL of the sandbox by making the following changes in the package.json.
 
