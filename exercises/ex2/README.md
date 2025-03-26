@@ -39,11 +39,14 @@ Create a risk management app with risks and mitigations. Each risk may refer to 
 
 # 2.2 Add Sample Data using Joule
 
-1. Go back to the Generative AI-Powered Development, Go to Sample data > Open Joule. Enter the below prompt.
+1. Go back to the Generative AI-Powered Development, Go to Sample data > Open Joule. Select the entity by clicking #db/schema.cds & Enter the below prompt.
+
+![alt text](image.png)
+
 ```
 Generate sample data
 ```
-![alt text]({D5245E7B-A590-470D-B90F-87FC8E88D5E1}.png)
+![alt text](image-1.png)
 
 2. Accept the data and you can see 2 csv files in the project test folder.
 
