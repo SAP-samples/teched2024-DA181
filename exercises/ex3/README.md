@@ -60,5 +60,5 @@ module.exports = async function(results, request) {
 
 You've now added a service logic to your risk management application.
 
-Continue to  [Exercise 4 - Add Business Partner Service & Connect your application to the Sandbox](exercises/ex4/)
+Continue to  [Exercise 4 - Add Business Partner Service & Connect your application to the Sandbox](../ex4/README.md)
 
