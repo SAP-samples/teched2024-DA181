@@ -41,20 +41,20 @@ Create a risk management app with risks and mitigations. Each risk may refer to 
 
 1. Go back to the Generative AI-Powered Development, Go to Sample data > Open Joule. Select the entity by clicking #db/schema.cds & Enter the below prompt.
 
-![alt text](image.png)
+![alt text](/exercises/ex2/images/image.png)
 
 ```
 Generate sample data
 ```
-![alt text](image-1.png)
+![alt text](/exercises/ex2/images/image-1.png)
 
 2. Accept the data and you can see 2 csv files in the project test folder.
 
-![alt text]({FE7255FC-AF99-4224-A56A-47DA10941159}.png)
+![alt text](/exercises/ex2/images/{FE7255FC-AF99-4224-A56A-47DA10941159}.png)
 
 3. Go to Data editor and review the data.
 
-![alt text]({BA0BA16D-280F-499D-9CC0-46189648A513}.png)
+![alt text](/exercises/ex2/images/{BA0BA16D-280F-499D-9CC0-46189648A513}.png)
 
 
 
