@@ -104,7 +104,7 @@ module.exports = cds.service.impl(async function() {
 
 3. Retrieve the SANDBOX_URL from the api hub.
 
-![alt text](image-21.png)
+![alt text](/exercises/ex4/image-11.png)
 
 4. Add the URL of the sandbox by making the following changes in the package.json.
 
@@ -129,6 +129,6 @@ The handler is invoked when your BusinessPartner service is called for a READ, s
 
 You have now successfully extended the CAP service with the consumption of an external Business Partner Service
 
-Additionally if you want to try the same with S4 system, follow this - [ Add Business Partner Data ](exercises/ex_optional/README.md)
+Additionally if you want to try the same with S4 system, follow this - [ Add Business Partner Data ](../ex_optional/README.md)
 
 
