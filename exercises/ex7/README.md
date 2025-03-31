@@ -5,7 +5,10 @@ In this exercise, we will configure the run configuration and set the database a
 
 ## Exercise 7.1  Create a run configuration
 
-1. Go to run configuration and click on the project launch.json and select SAP HANA Cloud as database. Then select the HDI container which was created in the [Exercise 6 - Bind your application to an HDI Container ](exercises/ex6/)
+1. Go to run configuration and click on the project launch.json
+![alt text](/exercises/ex7/images/start_rungeneration.png)
+- select SAP HANA Cloud as database. 
+- Then select the HDI container which was created in the [Exercise 6 - Bind your application to an HDI Container ](exercises/ex6/)
 
 ![alt text](/exercises/ex7/images/image-1.png)
 
