@@ -33,7 +33,7 @@ Create a risk management app with risks and mitigations. Each risk may refer to 
 
 <br>![](/exercises/ex2/images/storyboard.png)
 
-8. You can also go to the explorer and see the files i.e schema.cds and service.cds
+8. You can also go to the explorer and see the files i.e ./db/schema.cds and ./srv/service.cds
 
 <br>![](/exercises/ex2/images/cdsfiles.png)
 
@@ -43,17 +43,20 @@ Create a risk management app with risks and mitigations. Each risk may refer to 
 
 ![alt text](/exercises/ex2/images/image.png)
 
+Using __#-some-context__ you can more specifically instruct the context of the Joule generation task
 ```
-Generate sample data
+ #/db/schema.cds Generate sample data
 ```
 ![alt text](/exercises/ex2/images/image-1.png)
 
 2. Accept the data and you can see 2 csv files in the project test folder.
-
-![alt text](/exercises/ex2/images/{FE7255FC-AF99-4224-A56A-47DA10941159}.png)
+![alt text](/exercises/ex2/images/accept_sampledata.png)
+<!--[alt text](/exercises/ex2/images/{FE7255FC-AF99-4224-A56A-47DA10941159}.png)-->
+![alt text](/exercises/ex2/images/testdata_projecttree.png)  
 
 3. Go to Data editor and review the data.
 
+![alt text](/exercises/ex2/images/open_editor-sampledata.png)  
 ![alt text](/exercises/ex2/images/{BA0BA16D-280F-499D-9CC0-46189648A513}.png)
 
 

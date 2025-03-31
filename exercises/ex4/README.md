@@ -8,19 +8,22 @@ In this exercise, you will extend your CAP service with the consumption of an ex
 
 <br>![](/exercises/ex4/images/apilogin.png)
 
-2. Once you have logged in, navigate to the Business Partner API (SAP S/4HANA Cloud → Business Partner (A2X)).
+2. Once you have logged in, search for Business Partner (A2X)
+![alt text](/exercises/ex4/images/api_search.png)   
+<br> 
+3. Select and open the Business Partner API from the SAP S/4HANA Cloud Public Edition.
+![alt text](/exercises/ex4/images/api_search_result.png)  
+<br>![alt text](/exercises/ex4/images/image-13.png)
 
-![alt text](/exercises/ex4/images/image-13.png)
-
-3. Scroll down to API Resources > API Specifications Download the EDMX file.
+4. Scroll down to API Resources > under __API Specifications__ __download__ the EDMX file.
 
 ![alt text](/exercises/ex4/images/image-14.png)
 
 Once downloaded, upload the .edmx file to root folder of your project.
-
+![alt text](/exercises/ex4/images/upload2.png)
 ![alt text](/exercises/ex4/images/image-15.png)
 
-4. Import the Business Partner file by running the below cds command in the terminal. Click on the icon as shown below, select terminal > new terminal
+5. Import the Business Partner file by running the below cds command in the terminal. Click on the icon as shown below, select terminal > new terminal
 
 <br>![](/exercises/ex4/images/image-9.png)
 ```cds
@@ -28,7 +31,9 @@ Once downloaded, upload the .edmx file to root folder of your project.
 cds import API_BUSINESS_PARTNER.edmx
 
 ```
-5. The API_BUSINESS_PARTNER.edmx has been imported to the folder srv/external, also it generates API_BUSINESS_PARTNER.csn file. This CSN file is used by the CDS framework.
+<br>![](/exercises/ex4/images/terminal_import.png)  
+
+6. The API_BUSINESS_PARTNER.edmx has been imported to the folder srv/external, also it generates API_BUSINESS_PARTNER.csn file. This CSN file is used by the CDS framework.
 
 ![alt text](/exercises/ex4/images/{3AFE8A0A-B73A-4461-8D3A-F77554C6E081}.png)
 
@@ -36,7 +41,7 @@ cds import API_BUSINESS_PARTNER.edmx
 
 ![alt text](/exercises/ex4/images2/image.png)
 
-7. Add the below line in schema.cds and service.cds
+7. Add the below line in ./db/schema.cds and ./srv/service.cds
 
 ```cds 
 using { API_BUSINESS_PARTNER } from '../srv/external/API_BUSINESS_PARTNER';
@@ -49,7 +54,7 @@ Updated schema.cds will be as follows :
 ![alt text](/exercises/ex4/images2/image-2.png)
 
 
-## Edit the Data Model & Service Definition with Business Partner
+## Ex 4.2 - Edit the Data Model & Service Definition with Business Partner
 
 1. Open the Graphical Modeller under the data models as shown below and open the graphical modeller.
 
@@ -71,11 +76,11 @@ Updated schema.cds will be as follows :
 
 ![alt text](/exercises/ex4/images2/image-10.png)
 
-1. Under Projection, choose 'API_BUSINESS_PARTNER.A_BusinessPartner'. Uncheck all properties, and choose only BusinessPartner, FirstName and LastName and save.
+6. Under Projection, choose 'API_BUSINESS_PARTNER.A_BusinessPartner'. Uncheck all properties, and choose only BusinessPartner, FirstName and LastName and save.
 
 ![alt text](/exercises/ex4/images2/image-6.png) 
 
-8. Graphical Model & Storyboard will look as follows: 
+7. Graphical Model & Storyboard will look as follows: 
 
 ![alt text](/exercises/ex4/images2/image-7.png)
 
@@ -83,9 +88,9 @@ Updated schema.cds will be as follows :
 
 
 
-## Connect your application to the Business Partner API Sandbox Enviroment
+## Ex 4.3 Connect your application to the Business Partner API Sandbox Enviroment
 
-1. In order to read the entity, create a custom handler. go to srv > service.js. Copy the below code
+1. In order to read the entity, create a custom handler. In the project folder, under ./srv create a service-handler file *.js, you can name it __bp_api.js__. Copy the below code into the file:
 
 ```cds 
 
@@ -98,15 +103,28 @@ module.exports = cds.service.impl(async function() {
 });
 
 ```
-2. Copy the API Key from SAP Business Accerlator hub. 
+2. Now, go back to the SAP Business Accerlator hub and copy the API Key for the selected Business Partner (A2X) and add it to API_BUSINESS_PARTNER configuration in the package.json file
 
-![alt text](/exercises/ex4/images2/image-20.png)
+![alt text](/exercises/ex4/images2/image-20.png)  
 
-3. Retrieve the SANDBOX_URL from the api hub.
+```json
+      "API_BUSINESS_PARTNER": {
+          "kind": "odata-v2",
+          "model": "srv/external/API_BUSINESS_PARTNER",
+          "credentials": {
+            "url": "<URL>",
+             "headers": {
+                "APIKey": <API_KEY>
+            }
+          }
+        },
+
+```
+
+3. In addition, retrieve the SANDBOX_URL from the api hub and apply it also to the package.json-file
 
 ![alt text](/exercises/ex4/images2/image-11.png)
 
-4. Add the URL of the sandbox by making the following changes in the package.json.
 
 ```json
       "API_BUSINESS_PARTNER": {

@@ -8,19 +8,23 @@ In this exercise, lets create a logic for the service with the help of Joule. We
 
 <br>![](/exercises/ex3/images/addlogic.png)
 
-2. Once the dialog box appears, select the defaults.
+2. Once the dialog box appears, select the defaults and click __Add__
 
 <br>![](/exercises/ex3/images/dialoglogic.png)
 
-3. Select the handlers as shown below
+3. Specify the logic handlers as shown below
+- Phase __after__
+- Standard even __read__
 
 <br>![](/exercises/ex3/images/risklogicedit.png)
 
-4. Open code editor, select application logic
+4. From the Open code editor-drop down, select __Application Logic__
 
 <br>![](/exercises/ex3/images/applicationlogicopen.png)
 
-5. Enter the below prompt in Joule 
+5. Enter the below prompt text with context in Joule  
+Note, upon typing __#__ in the Joule prompt, a context is suggested, select #srv/code/risks-logic.js  
+![](/exercises/ex3/images/joule_context.png)
 ```
 if the impact of the current risk is greater than 10000 dollars set the criticality to 1 otherwise to 2
 ```
@@ -30,7 +34,7 @@ if the impact of the current risk is greater than 10000 dollars set the critical
 
 <br>![](/exercises/ex3/images/joulesuggestion.png)
 
-7. code is as follows :
+7. The ./srv/code/risks-logic.js-code now looks as follows :
 ```javascript
 /**
  * 

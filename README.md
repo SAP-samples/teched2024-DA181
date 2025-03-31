@@ -17,11 +17,8 @@ Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This reposit
 
 ## Exercises
 
-- [Getting Started - Add SAP HANA Database Extensions in your Dev Space](exercises/ex0/)
-```
-NOTE : Only perform the Step 1 on the below exercise 1 & return to the repository to continue.
-```
-- [Exercise 1 - Create a Full-Stack Project in SAP Build Code](https://developers.sap.com/tutorials/build-code-new-project.html)
+- [Getting Started (Exercise 0) - Add SAP HANA Database Extensions in your Dev Space](exercises/ex0/)
+- [Exercise 1 - Create a Full-Stack Project in SAP Build Code](exercises/ex1/)
 - [Exercise 2 - Create Data Model & Service with Joule](exercises/ex2/)
 - [Exercise 3 - Add Application Logic](exercises/ex3/)
 - [Exercise 4 - Add Business Partner Service & Connect your application to the Sandbox](exercises/ex4/)
