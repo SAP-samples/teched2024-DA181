@@ -34,7 +34,7 @@ cds import API_BUSINESS_PARTNER.edmx
 
 6. The package.json file is now updated in the requires section with the external service.
 
-![alt text](image.png)
+![alt text](/exercises/ex4/images2/image.png)
 
 7. Add the below line in schema.cds and service.cds
 
@@ -44,9 +44,9 @@ using { API_BUSINESS_PARTNER } from '../srv/external/API_BUSINESS_PARTNER';
 ```
 Updated schema.cds will be as follows :
 
-![alt text](image-3.png)
+![alt text](/exercises/ex4/images2/image-3.png)
 
-![alt text](image-2.png)
+![alt text](/exercises/ex4/images2/image-2.png)
 
 
 ## Edit the Data Model & Service Definition with Business Partner
@@ -61,23 +61,23 @@ Updated schema.cds will be as follows :
 
 3. Once the dialog box opens, look for the target entity shown in the image below and rename the a_BusinessPartner to BusinessPartner.
 
-![alt text](image-4.png)
+![alt text](/exercises/ex4/images2/image-4.png)
 
 4. Now the data model would look as follows :
 
-![alt text](image-5.png)
+![alt text](/exercises/ex4/images2/image-5.png)
 
 5. Go back to your storyboard,  under service, select 'Add Service Entity' as shown below. 
 
-![alt text](/exercises/ex4/images/image-10.png)
+![alt text](/exercises/ex4/images2/image-10.png)
 
-6. Under Projection, choose 'API_BUSINESS_PARTNER.A_BusinessPartner'. Uncheck all properties, and choose only BusinessPartner, FirstName and LastName and save.
+1. Under Projection, choose 'API_BUSINESS_PARTNER.A_BusinessPartner'. Uncheck all properties, and choose only BusinessPartner, FirstName and LastName and save.
 
-![alt text](image-6.png) 
+![alt text](/exercises/ex4/images2/image-6.png) 
 
 8. Graphical Model & Storyboard will look as follows: 
 
-![alt text](image-7.png)
+![alt text](/exercises/ex4/images2/image-7.png)
 
 ![alt text](/exercises/ex4/images/{C2A0C7F6-67EB-4BA2-AF39-EDEEE4421B16}.png)
 
@@ -100,11 +100,11 @@ module.exports = cds.service.impl(async function() {
 ```
 2. Copy the API Key from SAP Business Accerlator hub. 
 
-![alt text](image-20.png)
+![alt text](/exercises/ex4/images2/image-20.png)
 
 3. Retrieve the SANDBOX_URL from the api hub.
 
-![alt text](/exercises/ex4/image-11.png)
+![alt text](/exercises/ex4/images2/image-11.png)
 
 4. Add the URL of the sandbox by making the following changes in the package.json.
 
