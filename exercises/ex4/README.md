@@ -149,4 +149,5 @@ You have now successfully extended the CAP service with the consumption of an ex
 
 Additionally if you want to try the same with S4 system, follow this - [ Add Business Partner Data ](../ex_optional/README.md)
 
+Continue to  - [Exercise 5 - Add UI to your application ](exercises/ex5/)
 
