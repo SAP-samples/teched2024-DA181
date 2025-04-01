@@ -12,8 +12,9 @@ In this exercise, you will extend your CAP service with the consumption of an ex
 ![alt text](/exercises/ex4/images/api_search.png)   
 <br> 
 3. Select and open the Business Partner API from the SAP S/4HANA Cloud Public Edition.
+
 ![alt text](/exercises/ex4/images/api_search_result.png)  
-<br>![alt text](/exercises/ex4/images/image-13.png)
+![alt text](/exercises/ex4/images/image-13.png)
 
 4. Scroll down to API Resources > under __API Specifications__ __download__ the EDMX file.
 
@@ -149,5 +150,5 @@ You have now successfully extended the CAP service with the consumption of an ex
 
 Additionally if you want to try the same with S4 system, follow this - [ Add Business Partner Data ](../ex_optional/README.md)
 
-Continue to  - [Exercise 5 - Add UI to your application ](exercises/ex5/)
+Continue to  - [Exercise 5 - Add UI to your application ](../ex5/README.md)
 
