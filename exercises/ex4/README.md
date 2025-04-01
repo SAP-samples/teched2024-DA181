@@ -1,6 +1,6 @@
 # Exercise 4 - Adding Business Partner Service
 
-In this exercise, you will extend your CAP service with the consumption of an external Business Partner service from [SAP Business Accelerator Hub](https://api.sap.com/).
+In this exercise, you will extend your CAP service with the consumption of an external Business Partner service from [SAP Business Accelerator Hub](https://api.sap.com/).By integrating SAP Business Partner Service from SAP API Business Accerlator Hub, the Risk Management Application achieves the Clean Core principle by accessing business partner data without modifying the SAP S/4HANA system.
 
  ## Exercise 4.1 Connect your application to the Business Partner API Sandbox Enviroment
 
@@ -9,8 +9,9 @@ In this exercise, you will extend your CAP service with the consumption of an ex
 <br>![](/exercises/ex4/images/apilogin.png)
 
 2. Once you have logged in, search for Business Partner (A2X)
-![alt text](/exercises/ex4/images/api_search.png)   
-<br> 
+
+<br>![alt text](/exercises/ex4/images/api_search.png)   
+ 
 3. Select and open the Business Partner API from the SAP S/4HANA Cloud Public Edition.
 
 ![alt text](/exercises/ex4/images/api_search_result.png)  
