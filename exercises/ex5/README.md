@@ -73,5 +73,5 @@ You've now created the List report UI to your application.
 ## Summary
 
 Now the UI of your application is ready
-Continue to - [Bind your application to an HDI Container & View the data in SAP HANA Database Explorer](../../ex6/README.md)
+Continue to - [Bind your application to an HDI Container & View the data in SAP HANA Database Explorer](../ex6/README.md)
 
