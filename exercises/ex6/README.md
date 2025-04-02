@@ -2,7 +2,7 @@
 
 In this exercise, you will create a [SAP HANA Deployment Infrastructure ( HDI ) container](https://help.sap.com/docs/SAP_HANA_PLATFORM/3823b0f33420468ba5f1cf7f59bd6bd9/3ef0ee9da11440e4b01708455b8497a9.html) and bind that container to our project and deploy the project to SAP HANA Cloud.
 
-Note, as a prerequisite, you've setup a [SAP HANA Cloud Instance](https://developers.sap.com/group.hana-cloud-get-started-1-trial.html) incl. a cloud foundry environment, in case revisit the [pre-requistes check detaiks](/exercises/prerequistes/).
+Note, as a prerequisite, you've setup a [SAP HANA Cloud Instance](https://developers.sap.com/group.hana-cloud-get-started-1-trial.html) incl. a cloud foundry environment, in case revisit the [pre-requistes check details](/exercises/prerequistes/).
 
 ## Exercise 6.1  Login to your Cloud Foundry space and create a HDI container
 
