@@ -20,9 +20,15 @@ Note, as a prerequisite, you've setup a [SAP HANA Cloud Instance](https://develo
   
 
 
+<br>__2.__ The next step is to __prepare the Multi-Target Application definition__ (mta.yaml-file)  
+Service- and target runtime-dependencies are declared within the mta.yaml-file, using some terminal commands, the file can be easily created and filled with the information about the SAP HANA and HDI container runtime.  
 
-
-<br>__2.__ Go to Project Explorer, Click on Terminal. Enter the below command to add mta and hana. You will now see the project in the left bottom pane under SAP HANA Projects.
+Go to Project Explorer, an __open a New Terminal__ window
+- From top-menu in the left-side activity bar, select Terminal
+- Click on __"New Terminal"__. 
+<br>![](/exercises/ex6/images/new_terminal.png)
+  
+- Enter and execute the below commands to add mta and hana. 
 
 ```shell
 cds add mta
@@ -30,95 +36,81 @@ cds add mta
 ```shell
 cds add hana
 ```
-
+- You will now see the project in the left bottom pane under SAP HANA Projects.
 <br>![](/exercises/ex6/images/add.png)
 
-<br>__3.__ Create a HDI container, Under SAP HANA Projects, click on the bind icon, select Bind to an HDI Container.
-
+<br>__3.__ Now __create__ and __bind__ your __HDI container__
+- Under SAP HANA Projects, click on the __bind icon__, select Bind to an HDI Container.
 ![alt text](/exercises/ex6/images/image-1.png)
 
-<br>__4.__ Click on [Create a new service instance]
-
+- Click on __"+Create a new service instance"__  
 ![alt text](/exercises/ex6/images/image-2.png)
 
-<br>__5.__ Enter the name of the HDI as per your choice or go ahead with the one generated and click enter.
-
+- Enter the __name of the HDI container__ as per your choice or go ahead with the one generated and __press "enter"__ to confirm.  
 ![alt text](/exercises/ex6/images/image-3.png)
 
-<br>__6.__ Click on Enable and do not ask again.
-
+- Click on __"Enable and do not ask again"__.  
 <br>![](/exercises/ex6/images/dia.png)
 
-
-<br>__7.__ Now your HDI container service is created and is bound to your CAP project.
-
+- Now your HDI container service is created and is bound to your CAP project.
 ![alt text](/exercises/ex6/images/image-4.png)
 
-<br>__8.__ Open the Database Explorer by clicking on the cubical icon.
+<br>__4.__ Open the Database Explorer by clicking on the cubical icon.
 
 ![alt text](/exercises/ex6/images/image-5.png)
 
-<br>__9.__ In the HDI container, you will see that the none of the artifacts are generated. Refer to the image below.
-
+<br>__5.__ In the SAP HANA Database Explorer, for the connected HDI container, you will see that the none of the (here table) artifacts are yet generated as they still require to be deployed to the container. Refer to the image below.
 <br>![](/exercises/ex6/images/emptytables.png)
 
-<br>__11.__ Go back to your SAP Build Code and deploy your project by clicking on the rocket icon, and this will deploy your project to your SAP HANA Cloud Instance
-
+<br>__6.__ From SAP HANA Projects tree and deploy your HDI artifacts
+- _Click_ on the __rocket icon__, and this will deploy your project to your SAP HANA Cloud Instance
 <br>![](/exercises/ex6/images/deploy.png)
-
+<br><br>
 ## Exercise 6.2  Go to SAP HANA Database explorer and check the tables
 
-<br>__12.__ Click on database exploerer icon under SAP HANA Projects, which will open the SAP HANA Database explorer view. 
-
+<br>__7.__ Click on database exploerer icon under SAP HANA Projects again, which will open the SAP HANA Database explorer view. 
 <br>![](/exercises/ex7/images/dbx.png)
 
-<br>__13.__ Generated artifacts are shown as below:
-
+<br>__8.__ Generated (table) artifacts are now shown as below.  
+However, the sample data that was generated before will not have been populated into the below tables. 
 <br>![](/exercises/ex6/images/gen.png)
 
-<br>__14.__ Sample data that was generated will not be seen in the below tables, as it will return empty.The data that was generated in step 2 is not on an production and is used for testing purpose only. In order to add the data, 
-
-![alt text](/exercises/ex6/images/image-6.png)
-
-<br>__15.__ create a new folder called under db folder
-
+<br>__9.__ Populating tables with initial data.  
+The test data that was generated in Exercise 2 (under /test in the project tree), will not be populated into the target HANA runtime as it is targeted for CF design-time testing purpose only.  
+In order to add the data to the target HDI container
+- create a new folder called under db folder
 ![alt text](/exercises/ex6/images/image-7.png)
 
-<br>__16.__ name the folder as 'data' as shown below.
-
+- name the folder 'data' as shown below.
 ![alt text](/exercises/ex6/images/image-8.png)
 
-<br>__17.__ copy the csv files that is shown below.
-
+- copy the csv files from the test-folder that is shown below.
 ![alt text](/exercises/ex6/images/image-6.png)
 
-<br>__18.__ paste the csv files in the newly created data folder ( db>data)
-
+- paste the csv files in the newly created data folder ( db>data)
 ![alt text](/exercises/ex6/images/image-9.png)
 
-<br>__19.__ Your folder structure should look as follows
-
+- As a result, the folder structure should look as follows
 ![alt text](/exercises/ex6/images/image-10.png)
 
-<br>__20.__ Data editor will also reflect the changes as follows for both risks and mitigations: sample data is used for testing purposes only, and initial data is the data used for production.
 
-![alt text](/exercises/ex6/images/image-11.png)
-
-![alt text](/exercises/ex6/images/image-12.png)
-
-<br>__21.__ Deploy the application
-
+<br>__10.__ Now, the deploy to the HDI container again
 ![alt text](/exercises/ex6/images/image-13.png)
 
-<br>__22.__ Once deployed successfully, Navigate to SAP HANA Database explorer and review the data.
-
+<br>__11.__ Once deployed successfully
+- Navigate to SAP HANA Database explorer and review the data.
 ![alt text](/exercises/ex6/images/image-14.png)
 
-<br>__23.__ Review the tables and the data that is generated by the cds definitions and annotations.
-
+- Review the tables and the data that is generated by the cds definitions and annotations.
 ![alt text](/exercises/ex6/images/image-15.png)
 
-
+<br>__12.__ Explore __"initial data"__ within the project __Data Editor__ 
+- Click on "Project-Overview"-icon in the left-side activity bar
+- From the Risks entity in the data model, select __"Set Data"__, this will open the  __Data Editor__.  
+- Note again, sample data is used for design-time testing purposes only, whereas initial data is also populated into the target runtime used for production.
+![alt text](/exercises/ex6/images/Open-DataEditor.png)
+![alt text](/exercises/ex6/images/image-11.png)
+![alt text](/exercises/ex6/images/image-12.png)
 ## Summary
 
 You've now created a new HDI container and bound to your CAP Project. You can deploy the project to your SAP HANA Cloud instance and view the data in SAP HANA database explorer.
