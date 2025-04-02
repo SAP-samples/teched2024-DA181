@@ -4,6 +4,10 @@
 
 1. You have an SAP BTP Trial account [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
 
+![alt text](images/image-6.png)
+
+2. Enable cloud foundry
+
 ![alt text](images/image.png)
 
 2. You have completed the [Setup SAP Build Code](https://developers.sap.com/tutorials/build-code-setup.html) tutorial.
@@ -25,4 +29,6 @@
 6. Your SAP BTP Subaccount - Instances & Subscriptions should looks as follows:
 
 ![alt text](images/image-5.png)
+
+![alt text](image.png)
 
