@@ -1,72 +1,65 @@
-# Exercise 5 - Add UI to your application
+# Exercise 5 - Add a UI to your application
 
-In this exercise, lets add a simple fiori UI to your risk management application.
+In this exercise, let's add a simple Fiori UI to your risk management application.
 
-# Ex 5.1 - create the basic UI from a template
-1. Go to your storyboard, click on '+' icon under UI application.
-
+## Exercise 5.1 - Create the basic UI from a template
+<br>__1.__ Go to your __Storyboard__, _click_ on __'+'__ icon under __UI application__.
 <br>![](/exercises/ex5/images/createui.png)
 
-2. Enter the details for UI application, select your Project service-object as data source
-
+<br>__2.__ Enter the details for the UI application, 
+- Display name: __RiskApplication__
+- Application name: __riskapplication__
+- select your project's __service-object__ as a data source
+- then _click_ __"Next"__
 <br>![](/exercises/ex5/images/uiconfig1.png)
 
-3. UI application type as Template based application
-
+<br>__3.__ Select __"UI application Type"__
+- Click select __"Template-Based, Responsive Application"__
+- then _click_ __"Next"__
 <br>![](/exercises/ex5/images/ui_template.png)
 
-4. UI application template as List Report Page
-
+<br>__4.__ Select the specific __"UI application Template"__
+- Click select __"List Report Page"__
+- then _click_ __"Next"__
 <br>![](/exercises/ex5/images/uiconfig2.png)
 
-5. Choose the main entity as Risks 
-
+<br>__5.__ Select the __"Data Objects"__
+- Choose __"Risks"__ as the main entity 
 <br>![](/exercises/ex5/images/uiconfig3.png)
 
-6. Click on finish. This step will add all the necessary libraries to your project which will take a couple of seconds.
-
-You've now created the List report UI to your application.
-
-# Ex 5.2 - Now modify the UI 
-
-1. Open the page map under the UI Applications.
-
+<br>__6.__ Click on __Finish__. 
+- This step will add all the necessary libraries to your project which will take a couple of seconds.
+- You've now created the List report UI to your application.
+<br><br>  
+## Exercise 5.2 - Now modify the UI 
+<br>__7.__ Open the page map under the UI Applications.
 <br>![](/exercises/ex5/images/pagemap.png)
 
-2. Click on the icon shown below. 
-
+<br>__8.__ Click on the icon shown below. 
 <br>![](/exercises/ex5/images/editpagemap.png)
 
-3. In the columns list, delete the <strong>criticality</strong> column.
-
+<br>__9.__ In the columns list, delete the <strong>criticality</strong> column.
 <br>![](/exercises/ex5/images/delcrit.png)
 
-4. Select the column <strong>impact</strong> and on the right pane, scroll down to find the criticality property and set the value to criticality.
-
+<br>__10.__ Select the column <strong>impact</strong> and on the right pane, scroll down to find the criticality property and set the value to criticality.
 <br>![](/exercises/ex5/images/selcrit.png)
 
-5. Add the criticality representation to with icon
-
+<br>__11.__ Add the criticality representation to with icon
 <br>![](/exercises/ex5/images/criticon.png)
 
-6. Go back to the page map as shown in step 2.
-
+<br>__12.__ Go back to the page map as shown in step 2.
 <br>![](/exercises/ex5/images/objpage.png)
 
-7. Select the configure icon of object page section.
-
+<br>__13.__ Select the configure icon of object page section.
 <br>![](/exercises/ex5/images/editobject.png)
 
-8. Go to General Information > Form > Fields > Add Basic field.
-
+<br>__14.__ Go to General Information > Form > Fields > Add Basic field.
 <br>![](/exercises/ex5/images/editobject.png)
 
-9. Add a new column BusinessPartner 
-
+<br>__15.__ Add a new column BusinessPartner 
 <br>![](/exercises/ex5/images/addbp.png)
 
-10. Rename the BusinessPartner_BusinessPartner label to BusinessPartner 
-
+<br>__16.__ Rename the BusinessPartner_BusinessPartner label to BusinessPartner 
 <br>![](/exercises/ex5/images/renamebp.png)
 
 
