@@ -10,25 +10,24 @@
 
 ![alt text](images/image.png)
 
-2. You have completed the [Setup SAP Build Code](https://developers.sap.com/tutorials/build-code-setup.html) tutorial.
-
-![alt text](images/image-2.png)
-
-3. You have to set up [SAP HANA Cloud Instance](https://developers.sap.com/tutorials/hana-cloud-deploying.html) in Cloud Foundry enviroment.
-
-![alt text](images/image-3.png)
-
-4. You have the below space roles assigned to your user.
+3. You have the below cloud foundry space roles assigned to your user.
 
 ![alt text](images/image-4.png)
 
-5. You have an account in [SAP Business Accelerator Hub](https://api.sap.com/)
+4. You have to set up [SAP HANA Cloud Instance](https://developers.sap.com/tutorials/hana-cloud-deploying.html) in Cloud Foundry enviroment.
 
-![alt text](images/image-1.png)
+![alt text](images/image-3.png)
+
+5. You have completed the [Setup SAP Build Code](https://developers.sap.com/tutorials/build-code-setup.html) tutorial.
+
+![alt text](images/image-2.png)
+
 
 6. Your SAP BTP Subaccount - Instances & Subscriptions should looks as follows:
 
 ![alt text](images/image-5.png)
 
-![alt text](image.png)
 
+7. You have an account in [SAP Business Accelerator Hub](https://api.sap.com/)
+
+![alt text](images/image-1.png)
