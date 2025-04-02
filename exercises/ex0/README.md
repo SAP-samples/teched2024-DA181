@@ -1,13 +1,13 @@
 # Add SAP HANA Database Extensions in Your Dev Space
 
-<br>__1.__ In the SAP Build Lobby, go to the __product switch icon__ (top right corner) and __click__ on __"Dev Space Manager"__ to open the Business Application Studio development space management UI.
+<br>__1.__ In the SAP Build Lobby, go to the __product switch icon__ (top right corner) and __click__ on __"Dev Space Manager"__ to open the SAP Build Code development space management UI.
 <br>![](/exercises/ex0/images/devspace.png)
 
 <br>__2.__ Then __click__ on __"Create Dev Space"__ to create a new dev space.
 <br>![](/exercises/ex0/images/createdev.png)
 
 <br>__3.__ Specify the dev space name and select extensions:
-- _Name_ the dev space: __devspace__
+- _Name_ the dev space: __Full_Stack__
 - _Select_ 4 SAP HANA extensions
   - __SAP HANA Database explorer__ 
   - __SAP HANA tools__
