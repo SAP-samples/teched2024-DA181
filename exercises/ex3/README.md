@@ -2,39 +2,37 @@
 
 In this exercise, lets create a logic for the service with the help of Joule. We have our risks and mitigation as our entities, lets create a logic where if the impact of risk is greather than 10000, set the criticality of that risk to high or set it to warning.
 
-1. Go to your storyboard, under the services, open the graphical modeller, choose the risk entity and select add logic.
+<br>__1.__ Go to your __"Storyboard"__, 
+- under the services, _select_ __"Open in Graphical Modeler"__, 
+![](/exercises/ex3/images/{11492D55-E974-4F09-9F4F-49EB5FC6E34D}.png)  
 
-![](/exercises/ex3/images/{11492D55-E974-4F09-9F4F-49EB5FC6E34D}.png)
-
+- choose the risk entity and select add logic.
 <br>![](/exercises/ex3/images/addlogic.png)
 
-2. Once the dialog box appears, select the defaults and click __Add__
-
+<br>__2.__ Once the dialog box appears, _select_ the __default entries__ and then _click_ __Add__
 <br>![](/exercises/ex3/images/dialoglogic.png)
 
-3. Specify the logic handlers as shown below
-- Phase __after__
-- Standard even __read__
+<br>__3.__ _Specify_ the __logic handlers__ as shown below
+- Phase __"After"__
+- Standard event __"Read"__
 
 <br>![](/exercises/ex3/images/risklogicedit.png)
 
-4. From the Open code editor-drop down, select __Application Logic__
-
+<br>__4.__ From the Open code editor-drop down, select __Application Logic__
 <br>![](/exercises/ex3/images/applicationlogicopen.png)
 
-5. Enter the below prompt text with context in Joule  
-Note, upon typing __#__ in the Joule prompt, a context is suggested, select #srv/code/risks-logic.js  
+<br>__5.__ Upon the initial object creation of the risk handling applicatin logic, let's use Joule assistant, to generate a more specific logic
+- In the Joule prompt, enter the below text preceded with the context  #srv/code/risks-logic.js  
 ![](/exercises/ex3/images/joule_context.png)
 ```
 if the impact of the current risk is greater than 10000 dollars set the criticality to 1 otherwise to 2
 ```
 ![](/exercises/ex3/images/{CCF7F81C-FF03-45D5-B2C8-E05903D3FB9C}.png)
 
-6. You can now review & accept the suggested code and the new changes will be reflected in your project.
-
+<br>__6.__ You can now review and accept the AI-generated js-code, then the changes will be reflected in your project file.
 <br>![](/exercises/ex3/images/joulesuggestion.png)
 
-7. The ./srv/code/risks-logic.js-code now looks as follows :
+<br>__7.__ The code in the ./srv/code/risks-logic.js-file now looks as follows :
 ```javascript
 /**
  * 
