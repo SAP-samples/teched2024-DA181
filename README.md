@@ -8,7 +8,7 @@ This repository contains the material for the SAP TechEd 2024 session called DA1
 
 Welcome to the "Build AI-Enabled Intelligent Data Apps" repository! This repository contains a series of exercises designed to help you learn and practice building an SAP HANA Cloud-based intelligent data applications on SAP BTP, leveraging [generative AI-based code development with Joule copilot](https://www.sap.com/products/technology-platform/developer-tools.html). Each exercise includes step by step instructions from setup to develop an application using SAP Build Code & Joule.
 
-The Risk Management Application leverages SAP Build Code, Joule, and SAP HANA Cloud in a Cloud Foundry environment to assess and mitigate business risks while maintaining a clean core. It extracts data from SAP S/4HANA via APIs without modifications, ensuring system integrity.
+The Risk Management Application is a full-stack application based on the SAP Cloud Application Programming (CAP) and SAP Fiori Elements which also leverages SAP Build Code, Joule, and SAP HANA Cloud in a Cloud Foundry environment to assess and mitigate business risks while maintaining a clean core. It extracts data from SAP S/4HANA via APIs without modifications, ensuring system integrity.
 
 
 <br>![](/images/ArchitectureDiagram.drawio.png)
@@ -22,7 +22,7 @@ The Risk Management Application leverages SAP Build Code, Joule, and SAP HANA Cl
 3. You have to set up [SAP HANA Cloud Instance](https://developers.sap.com/tutorials/hana-cloud-deploying.html)
 4. You have an account in [SAP Business Accelerator Hub](https://api.sap.com/)
 
-Only proceed to the below exercise once you have gone through the [pre-requistes check](/exercises/prerequistes/)
+Only proceed to the below exercise once you have gone through the [Pre-requistes check](/exercises/prerequistes/)
 
 ## Exercises
 

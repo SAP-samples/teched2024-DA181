@@ -9,7 +9,7 @@ In this exercise, let's add a simple Fiori UI to your risk management applicatio
 <br>__2.__ Enter the details for the UI application, 
 - Display name: __RiskApplication__
 - Application name: __riskapplication__
-- select your project's __service-object__ as a data source
+- select your project's __service-object name__ as a data source
 - then _click_ __"Next"__
 <br>![](/exercises/ex5/images/uiconfig1.png)
 
