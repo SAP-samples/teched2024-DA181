@@ -1,20 +1,28 @@
-# Exercise 6 - Bind your application to an HDI Container & View the data in SAP HANA Database Explorer
+# Exercise 6 - Bind your application to an HDI Container and view the data in SAP HANA Database Explorer
 
-In this exercise, we will create a [SAP HANA Deployment Infrastructure ( HDI ) container](https://help.sap.com/docs/SAP_HANA_PLATFORM/3823b0f33420468ba5f1cf7f59bd6bd9/3ef0ee9da11440e4b01708455b8497a9.html) and bind that container to our project and deploy the project to SAP HANA Cloud.
+In this exercise, you will create a [SAP HANA Deployment Infrastructure ( HDI ) container](https://help.sap.com/docs/SAP_HANA_PLATFORM/3823b0f33420468ba5f1cf7f59bd6bd9/3ef0ee9da11440e4b01708455b8497a9.html) and bind that container to our project and deploy the project to SAP HANA Cloud.
 
-Note, as a prerequisite, you've setup a [SAP HANA Cloud Instance](https://developers.sap.com/group.hana-cloud-get-started-1-trial.html) incl. a cloud foundry environment.
+Note, as a prerequisite, you've setup a [SAP HANA Cloud Instance](https://developers.sap.com/group.hana-cloud-get-started-1-trial.html) incl. a cloud foundry environment, in case revisit the [pre-requistes check detaiks](/exercises/prerequistes/).
 
-## Ex 6.1  Login to CF space and create HDI container
+## Exercise 6.1  Login to your Cloud Foundry space and create a HDI container
 
-1. In Business Application Studio, you need to login to Cloud Foundry and add your subaccount & space.  
-You can navidate to the CF login from the menue on the left
-![alt text](/exercises/ex6/images/image.png)    
-![alt text](/exercises/ex6/images/cf_sso_passcode.png)    
-or alternative search for the CF login command in the top command search
-![alt text](/exercises/ex6/images/cf-login-cmd.png) 
+<br>__1.__ _Login_ to __Cloud Foundry "environment"__ under your BTP subaccount and your __Cloud Foundry "space"__.  
+- Click on __"CF login"-icon__ in the left-side activity bar
+![alt text](/exercises/ex6/images/cf-login_icon.png)
+  - or or alternative search for the CF login command in the top command search  ![alt text](/exercises/ex6/images/cf-login-cmd.png)   
+- Specify the correct __"Cloud Foundry Endpoint URL"__ from your subaccount
+- then select SSO Passcode and _click_ __"Open a new browser ..."__ to generate and copy a SSO passcode
+- __Paste the Passcode__ and then click __"Sign in"__
+![alt text](/exercises/ex6/images/cf_sso_passcode.png)  
+
+- Now verify the __"Cloud Foundry Target environment Org ID"__ and __"CF Space"__
+![alt text](/exercises/ex6/images/cf_target.png)    
+  
 
 
-2. Go to Project Explorer, Click on Terminal. Enter the below command to add mta and hana. You will now see the project in the left bottom pane under SAP HANA Projects.
+
+
+<br>__2.__ Go to Project Explorer, Click on Terminal. Enter the below command to add mta and hana. You will now see the project in the left bottom pane under SAP HANA Projects.
 
 ```shell
 cds add mta
@@ -25,88 +33,88 @@ cds add hana
 
 <br>![](/exercises/ex6/images/add.png)
 
-3. Create a HDI container, Under SAP HANA Projects, click on the bind icon, select Bind to an HDI Container.
+<br>__3.__ Create a HDI container, Under SAP HANA Projects, click on the bind icon, select Bind to an HDI Container.
 
 ![alt text](/exercises/ex6/images/image-1.png)
 
-4. Click on [Create a new service instance]
+<br>__4.__ Click on [Create a new service instance]
 
 ![alt text](/exercises/ex6/images/image-2.png)
 
-5. Enter the name of the HDI as per your choice or go ahead with the one generated and click enter.
+<br>__5.__ Enter the name of the HDI as per your choice or go ahead with the one generated and click enter.
 
 ![alt text](/exercises/ex6/images/image-3.png)
 
-6. Click on Enable and do not ask again.
+<br>__6.__ Click on Enable and do not ask again.
 
 <br>![](/exercises/ex6/images/dia.png)
 
 
-7. Now your HDI container service is created and is bound to your CAP project.
+<br>__7.__ Now your HDI container service is created and is bound to your CAP project.
 
 ![alt text](/exercises/ex6/images/image-4.png)
 
-8. Open the Database Explorer by clicking on the cubical icon.
+<br>__8.__ Open the Database Explorer by clicking on the cubical icon.
 
 ![alt text](/exercises/ex6/images/image-5.png)
 
-9. In the HDI container, you will see that the none of the artifacts are generated. Refer to the image below.
+<br>__9.__ In the HDI container, you will see that the none of the artifacts are generated. Refer to the image below.
 
 <br>![](/exercises/ex6/images/emptytables.png)
 
-10. Go back to your SAP Build Code and deploy your project by clicking on the rocket icon, and this will deploy your project to your SAP HANA Cloud Instance
+<br>__11.__ Go back to your SAP Build Code and deploy your project by clicking on the rocket icon, and this will deploy your project to your SAP HANA Cloud Instance
 
 <br>![](/exercises/ex6/images/deploy.png)
 
 ## Exercise 6.2  Go to SAP HANA Database explorer and check the tables
 
-1. Click on database exploerer icon under SAP HANA Projects, which will open the SAP HANA Database explorer view. 
+<br>__12.__ Click on database exploerer icon under SAP HANA Projects, which will open the SAP HANA Database explorer view. 
 
 <br>![](/exercises/ex7/images/dbx.png)
 
-2. Generated artifacts are shown as below:
+<br>__13.__ Generated artifacts are shown as below:
 
 <br>![](/exercises/ex6/images/gen.png)
 
-3. Sample data that was generated will not be seen in the below tables, as it will return empty.The data that was generated in step 2 is not on an production and is used for testing purpose only. In order to add the data, 
+<br>__14.__ Sample data that was generated will not be seen in the below tables, as it will return empty.The data that was generated in step 2 is not on an production and is used for testing purpose only. In order to add the data, 
 
 ![alt text](/exercises/ex6/images/image-6.png)
 
-4. create a new folder called under db folder
+<br>__15.__ create a new folder called under db folder
 
 ![alt text](/exercises/ex6/images/image-7.png)
 
-5. name the folder as 'data' as shown below.
+<br>__16.__ name the folder as 'data' as shown below.
 
 ![alt text](/exercises/ex6/images/image-8.png)
 
-6. copy the csv files that is shown below.
+<br>__17.__ copy the csv files that is shown below.
 
 ![alt text](/exercises/ex6/images/image-6.png)
 
-7. paste the csv files in the newly created data folder ( db>data)
+<br>__18.__ paste the csv files in the newly created data folder ( db>data)
 
 ![alt text](/exercises/ex6/images/image-9.png)
 
-8. Your folder structure should look as follows
+<br>__19.__ Your folder structure should look as follows
 
 ![alt text](/exercises/ex6/images/image-10.png)
 
-9. Data editor will also reflect the changes as follows for both risks and mitigations: sample data is used for testing purposes only, and initial data is the data used for production.
+<br>__20.__ Data editor will also reflect the changes as follows for both risks and mitigations: sample data is used for testing purposes only, and initial data is the data used for production.
 
 ![alt text](/exercises/ex6/images/image-11.png)
 
 ![alt text](/exercises/ex6/images/image-12.png)
 
-10. Deploy the application
+<br>__21.__ Deploy the application
 
 ![alt text](/exercises/ex6/images/image-13.png)
 
-11. Once deployed successfully, Navigate to SAP HANA Database explorer and review the data.
+<br>__22.__ Once deployed successfully, Navigate to SAP HANA Database explorer and review the data.
 
 ![alt text](/exercises/ex6/images/image-14.png)
 
-12. Review the tables and the data that is generated by the cds definitions and annotations.
+<br>__23.__ Review the tables and the data that is generated by the cds definitions and annotations.
 
 ![alt text](/exercises/ex6/images/image-15.png)
 
