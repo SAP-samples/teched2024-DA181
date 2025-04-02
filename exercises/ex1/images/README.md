@@ -43,6 +43,24 @@ Alternatively to the __Create__ (from scratch) option, once could copy existing 
 <br>![](/exercises/ex1/images/8_toaster.png)
 
 __Success__, the project is now prepared.
-You can now open in SAP Business Application Studio, the SAP Build Code development environment.
+You can now open in SAP Business Application Studio, the SAP Build Code development environment. 
+
+## SAP Build Code IDE Configurations
+
+Open the newly created project, right click on the activity bar and check if the below extensions are enabled.
+
+<br>![](/exercises/ex1/images/10_activity_bar_list.png)
+
+Additionally, to display the menu bar on the top. Click on the settings icon.
+
+<br>![](/exercises/ex1/images/11_settings.png)
+
+Search for __Menu Bar Visibility__ and click on the drop down and choose __Classic__
+
+<br>![](/exercises/ex1/images/12_menu_bar_visibility.png)
+
+Now your menu bar will look as shown below:
+
+<br>![](/exercises/ex1/images/13_menu_bar.png)
 
 Continue to - [Exercise 2 - Create Data Model & Service with Joule](../ex2/README.md)

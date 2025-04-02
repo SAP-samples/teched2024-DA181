@@ -22,6 +22,8 @@ The Risk Management Application leverages SAP Build Code, Joule, and SAP HANA Cl
 3. You have to set up [SAP HANA Cloud Instance](https://developers.sap.com/tutorials/hana-cloud-deploying.html)
 4. You have an account in [SAP Business Accelerator Hub](https://api.sap.com/)
 
+Only proceed to the below exercise once you have gone through the [pre-requistes check](/exercises/prerequistes/)
+
 ## Exercises
 
 - [Getting Started (Exercise 0) - Add SAP HANA Database Extensions in your Dev Space](exercises/ex0/)
