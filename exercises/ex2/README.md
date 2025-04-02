@@ -57,12 +57,11 @@ Create a risk management app with risks and mitigations. Each risk may refer to 
 <!--[alt text](/exercises/ex2/images/{FE7255FC-AF99-4224-A56A-47DA10941159}.png)-->
 ![alt text](/exercises/ex2/images/testdata_projecttree.png)  
 
-<br>__11.__ Go to the __"Open Data Editor"__ and to review the generated sample data.  
-Note, sample data generated to the /test/data-project folder, by default will not be copied to the SAP HANA runtime, however is only used within SAP Build Code itself.
+<br>__11.__ Go to the __"Open Data Editor"__ and to review the generated sample data. 
+Note, sample data is used to populate entities with predefined data sets for development and testing. It allows developers to quickly verify application functionality, simulate realistic scenarios, and validate service behavior. Sample data generated to the /test/data-project folder, by default will not be copied to the SAP HANA runtime.
 
 ![alt text](/exercises/ex2/images/open_editor-sampledata.png)  
 ![alt text](/exercises/ex2/images/{BA0BA16D-280F-499D-9CC0-46189648A513}.png)
-
 
 
 ## Summary
