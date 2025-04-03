@@ -4,12 +4,22 @@ In this additional instruction, it is outlined how to __change or add__ the __Bu
 
 Note: Continue with the next steps only if you have an S/4HANA system. The Business Partner API pointing to the SAP Business Accelerator HUB sandbox S/4HANA System  with the mock data (created in Exercise 4) will need to be replaced.
 
+To establish communication between SAP BTP and your S/4HANA system for business partner data, you need to create an HTTP destination in your BTP subaccount, configuring it with the S/4HANA Business Partner API URL, authentication details (username, password), and other relevant settings. 
+
 
 ## Create a S/4HANA system destination in SAP BTP Cockpit
 
-The [SAP BTP connectivity documentation](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/http-destination), provides detailed instructions on how to create a HTTP destination to your S/4HANA System.  
-<br>__1.__ In SAP BTP Cockpit
-- _create_ a __HTTP destination__ applying your systems destination details
+The [SAP BTP connectivity documentation](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/http-destination), provides detailed instructions on how to create a HTTP destination to your S/4HANA System. 
+<br>__1.__ In SAP BTP Cockpit, Configure the __HTTP destination__:
+- __Name__: Choose a descriptive name for the destination (e.g., S4H_BACKEND_SYSTEM or S4HANACLOUD_BusinessPartner). 
+- __Type__: Select "HTTP". 
+- __Description__: Provide a brief description of the destination's purpose. 
+- __URL__: Enter the URL of the S/4HANA Business Partner API. This usually looks like https://<TenantID>; api.s4hana.ondemand.com/sap/opu/odata/sap/API_BUSINESS_PARTNER. 
+- __Proxy Type__: Select "Internet". 
+- __Authentication__: Choose "BasicAuthentication" (or another suitable method). 
+- __User__: Enter the username of the communication user you created in S/4HANA. 
+- __Password__: Enter the password of the communication user. 
+Save the Destination: Click __"Save"__ to create the destination.  
 - Validate the connectivity
 <br>![](/exercises/ex_optional/images/btpc-created.png)
 <br>![](/exercises/ex_optional/images/createnewdest.png)
