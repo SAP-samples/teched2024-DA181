@@ -12,7 +12,9 @@ The [SAP BTP connectivity documentation](https://help.sap.com/docs/connectivity/
 - _create_ a __HTTP destination__ applying your systems destination details
 - Validate the connectivity
 <br>![](/exercises/ex_optional/images/btpc-created.png)
-<br>![](/exercises/ex_optional/images/btpc-created-details.png)
+<br>![](/exercises/ex_optional/images/createnewdest.png)
+- Add the additional properties
+<br>![](/exercises/ex_optional/images/additionalproperties.png)
 
 <br><br>
 
