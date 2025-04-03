@@ -1,71 +1,46 @@
-# Exercise 4 - Add Business Partner as External Resource
+# Add-on exercise - Add Business Partner as External Resource
 
-In this exercise, you can add the business partner into your project by adding the S/4 system as the destination in SAP Business Technology Platform ( BTP).
+In this additional instruction, it is outlined how to __change or add__ the __Business Partner API__ pointing to the the business partner entity in a __specific S/4HANA system__, which has to registered in SAP BTP cockpit as a BTP destination. 
+
+Note: Continue with the next steps only if you have an S/4HANA system. The Business Partner API pointing to the SAP Business Accelerator HUB sandbox S/4HANA System  with the mock data (created in Exercise 4) will need to be replaced.
 
 
-**NOTE: Continue with the next steps only if you have an S/4 System. You can Skip to [Exercise 4 - Add Business Partner Service & Connect your application to the Sandbox](../ex_optional/ex_optional.1/README.md) to add the mock Business Partner Data**
+## Create a S/4HANA system destination in SAP BTP Cockpit
 
+The [SAP BTP connectivity documentation](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/http-destination), provides detailed instructions on how to create a HTTP destination to your S/4HANA System.  
+<br>__1.__ In SAP BTP Cockpit
+- _create_ a __HTTP destination__ applying your systems destination details
+- Validate the connectivity
+<br>![](/exercises/ex_optional/images/btpc-created.png)
+<br>![](/exercises/ex_optional/images/btpc-created-details.png)
 
-## 1. Create a S/4 HANA Destination in SAP Business Technology Platform
+<br><br>
 
-1. [Setup a Destination in SAP Business Technology Platform ( BTP )](https://help.sap.com/docs/business-rules/business-rules-capability-for-neo-environment/configure-destination-for-sap-s-4hana-cloud)
+## Add the S/4HANA system and Business Partner API to your application
 
-## 2. Add the S/4 system in your application
-
-1. Go to SAP Build Code, Click on Service Center > Service > Select a Provider : SAP System > Under Services, you will now see the destination created in Exercise 3.1
-
+The [SAP Build Code service provider documentation](https://help.sap.com/docs/bas/sap-business-application-studio/sap-system-service-provider) gives detailed instructions on how to connect to service destinations form your project.  
+<br>__2.__ Back in your SAP Build Code project
+-  __Click__ on __"Service Center"__-icon in the left-side activity bar, the service center view opens
+-  Click __Add System__ to add your system registered in SAP BTP cockpit in the previous step
+   -  Service Center > Service > Select a Provider : SAP System 
+   <br>![](/exercises/ex_optional/images/bc_servicecenter.png)
+  
+- Under Services, you will now see the destination for the API_BUSINESS PARTNER, pointing to your S/4HANA System destination
 <br>![](/exercises/ex_optional/images/adds4.png)
 
-2. Go to Storyboard view and you will now see the external resources added : API_BUSINESS_PARTNER
+<br><br>
 
+## Adjust Business Partner API reference to data- and service model  
+
+<br>__3.__ From Storyboard view and you will now see the external resources added : API_BUSINESS_PARTNER  
 <br>![](/exercises/ex_optional/images/storyboardbupa.png)
 
-## 3. Edit the Data Model with Graphical Modeller
+<br>__4.__ According to the instructions given in [exercise 4.2: editing the data model and service definition with business partner](exercises/ex4#exercise-42---edit-the-data-model-and-service-definition-with-business-partner) you will now need to create the 
+- __data model relationship__ from the Risks data entity to the Business Partner API,
+- and the __service model relationship__ from the Risks service entity to the Business Partner API.
 
-1. Go to Storyboard, click on the downward arrow and open the graphical modeller
-
-<br>![](/exercises/ex_optional/images/opengrapmod.png)
-
-2. Click on Risks entity and select add relationship. Move the cursor to the white space to see the below dialog box.
-
-<br>![](/exercises/ex_optional/images/addrelationship.png)
-
-3. Add the new relationship as shown below:
-
-<br>![](/exercises/ex_optional/images/newrelationship.png)
-
-4. Updated data model will look as shown below:
-
-<br>![](/exercises/ex_optional/images/modifieddm.png)
-
-## 4. Edit the Service
-
-1. Click on Service entity on storyboard and select open Graphical Modeller.
-
-<br>![](/exercises/ex_optional/images/storyboardservice.png)
-
-2. Add a new entity which opens a new projection to your service.
-
-<br>![](/exercises/ex_optional/images/addprojection.png)
-
-3. Select API_BUSINESS_PARTNER_A_BusinessPartner and uncheck <all properties> and choose the columns of your choice. In this example, we will choose 
-1.BusinessPartner
-2.FirstName
-3.LastName
-
-<br>![](/exercises/ex_optional/images/selectcolumns.png)
-
-4. Newly updated service definition will look as follows.
-
-<br>![](/exercises/ex_optional/images/newservicedefinition.png)
-
-5. Updated storyboard with additon of business partner in data model & services.
+<br>__5.__ Updated storyboard with additon of business partner in data model & services.
 
 <br>![](/exercises/ex_optional/images/updatedstoryboardbupa.png)
 
-## Summary
-
-You have now added Business Partner into your data model and the service definition.
-
-Continue to - [Exercise 5 - Add UI to your application ](../ex5/README.md)
 
