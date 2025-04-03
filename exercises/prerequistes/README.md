@@ -6,7 +6,7 @@
 ![alt text](images/image-6.png)
 
 <br>__2.__ You have to set up your [SAP HANA Cloud Instance](https://developers.sap.com/tutorials/hana-cloud-deploying.html) in the Cloud Foundry environment.
-- The instance is started and status __"Running"__
+- The instance is started and status __"Running"__  
 ![alt text](images/image-3.png)
 
 
