@@ -14,14 +14,16 @@
 - You will require the __API Endpoint__ and __Org ID__
 ![alt text](images/image.png)  
 
-- Make sure you have created a __Cloud Foundry "Space"__ and as assigned the respective __space roles assigned to your user__.  
-![alt text](images/image-4.png)
+- Make sure you have created a __Cloud Foundry "Space"__ and have assigned the respective __space roles__ to your __user__ (visible under Space Members, once the navigated into the CF space).  
+![alt text](images/image-4detailed.png)
 
 
 <br>__4.__ You have completed the [Setup SAP Build Code](https://developers.sap.com/tutorials/build-code-setup.html) tutorial.
 
 ![alt text](images/image-2.png)
 
+Verify the Build Code and Build Code - Loby Admin and Developer role collections are applied to your account, otherwise you will not be able to open SAP Build.
+![alt text](images/bc-rolecollections.png)
 
 <br>__5.__ Your SAP BTP Subaccount - Instances & Subscriptions should looks as follows:
 
