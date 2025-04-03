@@ -11,7 +11,9 @@ By consuming the Business Partner API definition from SAP API Business Accerlato
 
 <br>__2.__ Once you have logged in, _search_ for __"Business Partner (A2X)"__
 <br>![alt text](/exercises/ex4/images/api_search.png)   
- 
+
+Note, the Application-to-Cross Application (A2X) service category objects is targeted to facilitate the exchange of business information between a system and an unspecified client [service categories in APIs on SAP Business Accelerator Hub documentation](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/8308e6d301d54584a33cd04a9861bc52/1e60f14bdc224c2c975c8fa8bcfd7f3f.html?locale=en-US).
+
 <br>__3.__ From the returned search results, 
 - _select_ and _open_ the __Business Partner (A2X)__ from the __SAP S/4HANA Cloud Public Edition__.
 ![alt text](/exercises/ex4/images/api_search_result.png)  
